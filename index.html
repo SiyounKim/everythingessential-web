@@ -1,29 +1,211 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Everything Essential | Intelligent Systems for Daily Life</title>
-<meta name="description" content="Everything Essential builds intelligent systems that help people manage food, budgeting, and dietary safety with confidence, starting with Friddy, an AI-powered Kitchen OS." />
-<meta name="keywords" content="Everything Essential, Friddy, Kitchen OS, AI grocery app, food waste reduction, grocery optimization, smart kitchen, budget grocery planning, AI meal planning" />
-<meta property="og:title" content="Everything Essential" />
-<meta property="og:description" content="Intelligent systems for the essentials of daily life. Friddy is our first product — an AI-powered Kitchen OS." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Everything Essential — Intelligent systems for essential daily decisions</title>
+  <meta name="description" content="Everything Essential builds calm, thoughtful software for essential daily decisions. Friddy is our smart food operating system for less waste and calmer kitchens." />
+  <meta property="og:title" content="Everything Essential" />
+  <meta property="og:description" content="Intelligent systems for the essential decisions of daily life, starting with Friddy." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0c2234" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-<div id="root"></div>
+<body data-brand="ee">
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="logo" href="#" aria-label="Everything Essential home" data-set-brand="ee">
+        <img src="bow-logo.png" class="logo-mark" alt="Everything Essential" />
+        <span id="logoText">Everything Essential</span>
+      </a>
 
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+      <div class="brand-toggle" role="tablist" aria-label="Switch brand view">
+        <button type="button" role="tab" data-brand-tab="ee" aria-selected="true"><span class="dot"></span> Everything Essential</button>
+        <button type="button" role="tab" data-brand-tab="friddy" aria-selected="false"><span class="dot"></span> Friddy</button>
+      </div>
 
-<script type="text/babel" src="tweaks-panel.jsx"></script>
-<script type="text/babel" src="shared.jsx"></script>
-<script type="text/babel" src="home.jsx"></script>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#what">What we do</a>
+        <a href="#product">Product</a>
+        <a href="pages/About.html">About</a>
+        <a href="pages/Blog.html">Blog</a>
+        <a href="pages/Contact.html">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="#what">What we do</a>
+      <a href="#product">Product</a>
+      <a href="pages/About.html">About</a>
+      <a href="pages/Blog.html">Blog</a>
+      <a href="pages/Contact.html">Contact</a>
+      <div class="brand-row">
+        <button type="button" data-brand-tab="ee"><span class="dot ee-dot"></span> Everything Essential</button>
+        <button type="button" data-brand-tab="friddy"><span class="dot fr-dot"></span> Friddy</button>
+      </div>
+      <a class="btn btn-primary menu-cta" href="https://apps.apple.com/kr/app/friddy/id6768114689?l=en-GB" target="_blank" rel="noopener">Download Friddy</a>
+    </nav>
+  </header>
+
+  <main id="view-ee" class="view" data-active="true" aria-label="Everything Essential home">
+    <section class="ee-hero hero-section">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="meta"><span class="pill">Est. 2025 — Everything Essential</span></div>
+          <h1>Intelligent systems for the <span class="accent">essential decisions</span> of daily life.</h1>
+          <p class="lead">Everything Essential builds calm, thoughtful software that connects the small, everyday choices around food, time, money, and waste — so people, families, and households can run on less friction.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#product">Explore our first product <span aria-hidden="true">→</span></a>
+            <a class="btn btn-secondary" href="pages/Contact.html">Partner with us</a>
+          </div>
+        </div>
+
+        <div class="ee-diagram" aria-label="Essential decision system diagram">
+          <svg class="lines" viewBox="0 0 400 420" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M70 60 Q200 80 200 210" />
+            <path d="M330 80 Q260 130 210 210" />
+            <path d="M70 350 Q180 320 200 230" />
+            <path d="M330 360 Q260 290 215 230" />
+            <path d="M60 210 Q130 210 190 215" />
+            <path d="M340 210 Q270 210 215 215" />
+          </svg>
+          <div class="node n1"><span class="dot"></span>Grocery</div>
+          <div class="node n2 sub"><span class="dot"></span>Inventory</div>
+          <div class="node n3 sub"><span class="dot"></span>Time</div>
+          <div class="node n4"><span class="dot"></span>Budget</div>
+          <div class="node n5 sub"><span class="dot"></span>Waste</div>
+          <div class="node n6 sub"><span class="dot"></span>Decisions</div>
+          <div class="node center"><span class="dot"></span>Everything Essential</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="what">
+      <div class="wrap section-head">
+        <p class="kicker">What we do</p>
+        <h2>One company, focused on the systems that quietly run our lives.</h2>
+        <p>We design intelligent products for the categories most people already think about every day — and most software still ignores. Our work begins with food, but the philosophy is broader: clarity, calm, and better defaults.</p>
+      </div>
+      <div class="wrap principle-grid">
+        <article class="card"><span>01 / Principle</span><h3>Calm by default</h3><p>Our software should reduce the number of decisions someone has to make in a day, not add to them.</p></article>
+        <article class="card"><span>02 / Principle</span><h3>Connected, not cluttered</h3><p>Grocery, inventory, recipes, budget — they are one system in real life. We treat them as one system in software.</p></article>
+        <article class="card"><span>03 / Principle</span><h3>Trustworthy intelligence</h3><p>Explainable defaults, careful data, and decisions people can understand and override.</p></article>
+      </div>
+    </section>
+
+    <section class="section problem-section">
+      <div class="wrap split-grid">
+        <div>
+          <p class="kicker">The problem</p>
+          <h2>Everyday essentials are fragmented across a dozen disconnected tools.</h2>
+          <p>People keep a grocery list in one app, recipes in another, prices in their head, and expiry dates on a sticker. Most friction in daily life is a thousand small decisions that do not talk to each other.</p>
+        </div>
+        <div class="problem-list">
+          <p><span>×</span> The shopping list does not know what is already in the fridge.</p>
+          <p><span>×</span> The recipe app does not know what is about to expire.</p>
+          <p><span>×</span> The budget app does not see what got thrown away.</p>
+          <p><span>×</span> Households repeat the same decisions every week, with no memory.</p>
+        </div>
+      </div>
+      <div class="wrap stat-grid">
+        <div><strong>~30%</strong><span>of household food is wasted on average globally.</span></div>
+        <div><strong>$1.5K</strong><span>average grocery overspend per household per year.</span></div>
+        <div><strong>7+</strong><span>disconnected apps used for food and grocery decisions.</span></div>
+        <div><strong>2.5h</strong><span>weekly spent planning, listing, and re-checking.</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="product">
+      <div class="wrap product-teaser">
+        <div class="teaser-copy">
+          <p class="kicker">Our first product</p>
+          <h2>A smart food operating system, beginning at the kitchen.</h2>
+          <p>Friddy connects grocery planning, kitchen inventory, expiry tracking, recipe recommendations, and reorder into one calm, joined-up product.</p>
+          <div class="cta-row"><button class="btn btn-primary" type="button" data-set-brand="friddy">Explore Friddy</button><a class="btn btn-secondary" href="https://apps.apple.com/kr/app/friddy/id6768114689?l=en-GB" target="_blank" rel="noopener">Download on App Store</a></div>
+        </div>
+        <div class="teaser-card">
+          <span>A product by Everything Essential</span>
+          <h3>Friddy — smart food, less waste.</h3>
+          <p class="tags">Grocery · Inventory · Expiry · Recipes · Reorder · Budget</p>
+          <img src="friddy-home.png" alt="Friddy home screen" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-band" id="contact">
+      <div class="wrap cta-panel">
+        <div><p class="kicker">Get in touch</p><h2>Building intelligent systems is patient work. We would like to do it with thoughtful partners.</h2><p>If you are an investor, distribution partner, or collaborator working at the edges of food, household intelligence, or essential consumer software — we would love to hear from you.</p></div>
+        <a class="btn btn-primary" href="pages/Contact.html">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <main id="view-friddy" class="view" data-active="false" aria-label="Friddy product page">
+    <section class="fr-hero hero-section">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="meta"><span class="pill">Friddy · A product by Everything Essential</span></div>
+          <h1>Smart food, less waste, calmer kitchens.</h1>
+          <p class="lead">Friddy is a food operating system for the modern household. It connects what you buy, what is in your kitchen, what is about to expire, and what to cook — into one calm, joined-up loop.</p>
+          <div class="cta-row"><a class="btn btn-primary" href="https://apps.apple.com/kr/app/friddy/id6768114689?l=en-GB" target="_blank" rel="noopener">Download on the App Store</a><a class="btn btn-secondary" href="#how">See how it works</a></div>
+        </div>
+        <div class="phone-showcase"><img class="phone main-phone" src="friddy-home.png" alt="Friddy home screen" /><img class="phone side-phone" src="friddy-shopping.png" alt="Friddy shopping screen" /></div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="wrap section-head"><p class="kicker">How it works</p><h2>One loop, end to end — from grocery to leftover.</h2><p>Most apps cover one stage of the kitchen. Friddy covers the whole arc, so each step makes the next one smarter.</p></div>
+      <div class="wrap loop-grid">
+        <article><span>01</span><h3>Grocery planning</h3><p>Plan the week using what you actually have, eat, and like.</p></article>
+        <article><span>02</span><h3>Smart shopping list</h3><p>A single list that knows your kitchen, budget, and routine.</p></article>
+        <article><span>03</span><h3>Inventory update</h3><p>The kitchen updates itself: pantry, fridge, and freezer.</p></article>
+        <article><span>04</span><h3>Expiry tracking</h3><p>Nothing forgotten at the back of the shelf.</p></article>
+        <article><span>05</span><h3>Recipe recommendations</h3><p>Cook from what is in front of you, not what is online.</p></article>
+        <article><span>06</span><h3>Reorder when needed</h3><p>The staples come back on their own. You stay in control.</p></article>
+      </div>
+    </section>
+
+    <section class="section fr-screens">
+      <div class="wrap section-head"><p class="kicker">Inside Friddy</p><h2>One product, six everyday surfaces.</h2><p>A small tour of the screens that hold the loop together.</p></div>
+      <div class="wrap screen-grid">
+        <img src="friddy-shopping.png" alt="Friddy smart grocery list" />
+        <img src="friddy-inventory.png" alt="Friddy kitchen inventory" />
+        <img src="friddy-recipe.png" alt="Friddy recipe recommendation" />
+        <img src="friddy-cook.png" alt="Friddy cooking flow" />
+        <img src="friddy-insights.png" alt="Friddy budget and savings insights" />
+      </div>
+    </section>
+
+    <section class="section outcomes-section">
+      <div class="wrap section-head"><p class="kicker">Why it matters</p><h2>Small, daily decisions add up — in money, in time, and in waste.</h2><p>Friddy is a quiet system that does the bookkeeping behind food so households can spend less, waste less, and decide faster.</p></div>
+      <div class="wrap stat-grid">
+        <div><strong>—40%</strong><span>Estimated household food waste reduction.</span></div>
+        <div><strong>$80/mo</strong><span>Average grocery savings through smarter lists.</span></div>
+        <div><strong>2h/wk</strong><span>Time returned to the household.</span></div>
+      </div>
+    </section>
+
+    <section class="section fr-cta">
+      <div class="wrap cta-panel"><div><p class="kicker">Live on iOS · Korea</p><h2>Friddy is on the App Store today.</h2><p>Download the iOS app to start cooking from what is in front of you.</p></div><a class="btn btn-primary" href="https://apps.apple.com/kr/app/friddy/id6768114689?l=en-GB" target="_blank" rel="noopener">Download on the App Store</a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div><a class="logo" href="#" data-set-brand="ee"><img src="bow-logo.png" class="logo-mark" alt="" /><span>Everything Essential</span></a><p>A company building intelligent systems for the essential decisions of daily life.</p></div>
+      <div><h4>Company</h4><a href="pages/About.html">About</a><a href="pages/Blog.html">Blog</a></div>
+      <div><h4>Product</h4><button type="button" data-set-brand="friddy">Friddy</button><a href="https://apps.apple.com/kr/app/friddy/id6768114689?l=en-GB" target="_blank" rel="noopener">Download iOS</a></div>
+      <div><h4>Legal</h4><a href="pages/Privacy.html">Privacy</a><a href="pages/Privacy-ko.html">개인정보 처리방침</a></div>
+    </div>
+    <div class="wrap footer-bottom"><span>© 2026 Everything Essential. All rights reserved.</span><span>v0.1 — Concept</span></div>
+  </footer>
+  <script src="app.js"></script>
 </body>
 </html>

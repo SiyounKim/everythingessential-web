@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/about.html", "destination": "/pages/About.html" },
+    { "source": "/blog.html", "destination": "/pages/Blog.html" },
+    { "source": "/contact.html", "destination": "/pages/Contact.html" },
+    { "source": "/privacy.html", "destination": "/pages/Privacy.html" },
+    { "source": "/privacy-ko.html", "destination": "/pages/Privacy-ko.html" },
+    { "source": "/friddy.html", "destination": "/index.html" }
+  ]
+}
