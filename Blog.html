@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog — Everything Essential</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<style>
+  .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+  .filter-bar .chip { cursor: pointer; transition: background-color .15s, color .15s, border-color .15s; }
+  .filter-bar .chip.active { background: var(--ee-navy); color: var(--ee-offwhite); border-color: var(--ee-navy); }
+</style>
+</head>
+<body data-brand="ee" data-screen-label="Blog">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="../Everything Essential.html" class="logo">
+      <img src="../bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
+      <span>Everything Essential</span>
+    </a>
+    <div class="brand-toggle">
+      <a href="../Everything Essential.html" data-brand="ee" aria-selected="true"><span class="dot"></span> Everything Essential</a>
+      <a href="../Everything Essential.html#friddy" data-brand="friddy" aria-selected="false"><span class="dot"></span> Friddy</a>
+    </div>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav-links">
+      <a href="../Everything Essential.html#what">What we do</a>
+      <a href="../Everything Essential.html#product">Product</a>
+      <a href="About.html">About</a>
+      <a href="Blog.html" class="active">Blog</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile menu">
+    <a href="../Everything Essential.html#what">What we do</a>
+    <a href="../Everything Essential.html#product">Product</a>
+    <a href="About.html">About</a>
+    <a href="Blog.html">Blog</a>
+    <a href="Contact.html">Contact</a>
+    <div class="brand-row">
+      <a href="../Everything Essential.html"><span class="dot" style="background:var(--ee-navy)"></span> Everything Essential</a>
+      <a href="../Everything Essential.html#friddy"><span class="dot" style="background:var(--fr-green)"></span> Friddy</a>
+    </div>
+    <a class="btn btn-primary menu-cta" href="https://apps.apple.com/kr/app/friddy/id6768114689?l=en-GB" target="_blank" rel="noopener">Download Friddy</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="../Everything Essential.html">Home</a><span>/</span><span>Blog</span></div>
+    <span class="eyebrow">Writing &amp; Thinking</span>
+    <h1 style="margin-top: 14px; max-width: 22ch;">Notes on calm software for everyday life.</h1>
+    <p class="lead" style="margin-top: 20px;">A small, slow blog. Essays on food systems, household intelligence, and the design philosophy behind Everything Essential — by us and our friends.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+
+    <div class="filter-bar">
+      <span class="chip active">All</span>
+      <span class="chip">Company</span>
+      <span class="chip">Product</span>
+      <span class="chip">Food &amp; sustainability</span>
+      <span class="chip">Design</span>
+    </div>
+
+    <!-- Featured -->
+    <div class="blog-grid">
+      <a class="post-card featured" href="blog-essential-thesis.html">
+        <div class="img">
+          <span class="tag">Company</span>
+          <span class="ph">[ feature image ]</span>
+        </div>
+        <div class="body">
+          <span class="eyebrow">Founding essay</span>
+          <h3>The essential thesis: why we're starting with food.</h3>
+          <p>The categories that shape our days — food, time, money, waste — are still served by software that treats each one as separate. We think they're one system. Here's the thinking behind Everything Essential, and why our first product is in the kitchen.</p>
+          <span class="meta"><span>MAY 21, 2026</span><span>·</span><span>8 MIN READ</span></span>
+        </div>
+      </a>
+
+      <a class="post-card" href="blog-calm-by-default.html">
+        <div class="img">
+          <span class="tag">Design</span>
+          <span class="ph">[ image ]</span>
+        </div>
+        <div class="body">
+          <h3>Calm by default: notes on quiet software.</h3>
+          <p>A few principles we keep coming back to when designing for daily essentials — and the tradeoffs we make so the product can step out of the way.</p>
+          <span class="meta"><span>MAY 14, 2026</span><span>·</span><span>6 MIN</span></span>
+        </div>
+      </a>
+
+      <a class="post-card" href="blog-why-friddy.html">
+        <div class="img">
+          <span class="tag">Product</span>
+          <span class="ph">[ image ]</span>
+        </div>
+        <div class="body">
+          <h3>Why Friddy is our first product.</h3>
+          <p>Of all the categories we could have started with, why the kitchen? Three reasons: density of decisions, sharpness of the waste problem, and a clean loop we can actually close.</p>
+          <span class="meta"><span>MAY 07, 2026</span><span>·</span><span>5 MIN</span></span>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="img">
+          <span class="tag">Sustainability</span>
+          <span class="ph">[ image ]</span>
+        </div>
+        <div class="body">
+          <h3>The household waste paradox.</h3>
+          <p>Households waste the largest share of food in the supply chain — and have the least data about it. A short look at what we know.</p>
+          <span class="meta"><span>APR 30, 2026</span><span>·</span><span>7 MIN</span></span>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="img">
+          <span class="tag">Product</span>
+          <span class="ph">[ image ]</span>
+        </div>
+        <div class="body">
+          <h3>How we think about the grocery list.</h3>
+          <p>The shopping list is the hardest screen in the kitchen. It looks simple. It isn't. A short tour of why.</p>
+          <span class="meta"><span>APR 23, 2026</span><span>·</span><span>9 MIN</span></span>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="img">
+          <span class="tag">Design</span>
+          <span class="ph">[ image ]</span>
+        </div>
+        <div class="body">
+          <h3>Two palettes, one system.</h3>
+          <p>How we designed Friddy to feel warm and food-related, while staying inside the calmer Everything Essential brand world.</p>
+          <span class="meta"><span>APR 16, 2026</span><span>·</span><span>4 MIN</span></span>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="img">
+          <span class="tag">Company</span>
+          <span class="ph">[ image ]</span>
+        </div>
+        <div class="body">
+          <h3>Hiring slowly, hiring well.</h3>
+          <p>Notes on building a small team that takes its work — and its people — seriously.</p>
+          <span class="meta"><span>APR 09, 2026</span><span>·</span><span>5 MIN</span></span>
+        </div>
+      </a>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 48px;">
+      <button class="btn btn-secondary">Load more</button>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section style="background: var(--ee-cream);">
+  <div class="wrap">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;">
+      <div>
+        <span class="eyebrow">Subscribe</span>
+        <h2 style="margin-top: 14px;">A short note, once a month.</h2>
+        <p style="margin-top: 14px; max-width: 50ch;">A small monthly newsletter on what we're learning about food systems, household intelligence, and the slow work of building Everything Essential. No spam. Unsubscribe in one click.</p>
+      </div>
+      <form class="form" onsubmit="event.preventDefault(); this.querySelector('.sent').hidden=false;" style="padding: 24px;">
+        <div class="row"><label for="n-email">Email</label><input id="n-email" type="email" placeholder="you@example.com" required></div>
+        <div class="actions"><button class="btn btn-primary" type="submit">Subscribe</button><span class="note">Roughly once a month.</span></div>
+        <p class="sent" hidden style="font-size: 13px; color: var(--ee-navy); margin: 0;">✓ Subscribed. Welcome.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <a href="../Everything Essential.html" class="logo">
+          <img src="../bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
+          <span>Everything Essential</span>
+        </a>
+        <p style="margin-top:14px; font-size:14px; max-width: 36ch;">A company building intelligent systems for the essential decisions of daily life.</p>
+      </div>
+      <div><h4>Company</h4><ul><li><a href="About.html">About</a></li><li><a href="Blog.html">Blog</a></li></ul></div>
+      <div><h4>Product</h4><ul><li><a href="../Everything Essential.html#friddy">Friddy</a></li><li><a href="../Everything Essential.html#how">How it works</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="Contact.html">Contact</a></li><li><a href="#">Press</a></li><li><a href="#">Partners</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="Privacy.html">Privacy</a></li><li><a href="Privacy-ko.html">개인정보 처리방침</a></li><li><a href="Terms.html">Terms</a></li></ul></div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Everything Essential. All rights reserved.</span>
+      <span class="links">
+        <a href="Privacy.html">Privacy</a>
+        <a href="Terms.html">Terms</a>
+        <a href="Contact.html">Contact</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.filter-bar .chip').forEach(c => {
+    c.addEventListener('click', () => {
+      document.querySelectorAll('.filter-bar .chip').forEach(x => x.classList.remove('active'));
+      c.classList.add('active');
+    });
+  });
+</script>
+<script>
+function toggleMenu(btn){var b=btn.closest('.topbar');var o=b.classList.toggle('menu-open');btn.setAttribute('aria-expanded',o);}
+document.addEventListener('click',function(e){var a=e.target.closest('.mobile-nav a');if(a){var b=a.closest('.topbar');if(b)b.classList.remove('menu-open');}});
+</script>
+</body>
+</html>

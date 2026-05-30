@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Calm by default — Everything Essential</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<style>
+  .post-hero .featured-image {
+    height: clamp(280px, 38vw, 480px);
+    border-radius: var(--r-lg);
+    background: repeating-linear-gradient(45deg, var(--ee-cream) 0 14px, #fff 14px 28px);
+    border: 1px solid var(--border);
+    margin-top: 32px;
+    position: relative;
+  }
+  .post-hero .featured-image .ph {
+    position: absolute; bottom: 14px; right: 18px;
+    font-family: var(--mono); font-size: 12px; color: var(--secondary); letter-spacing: .04em;
+  }
+  .author-row { display: flex; gap: 14px; align-items: center; margin-top: 24px; }
+  .author-row .avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--ee-navy); color: var(--ee-offwhite);
+    display: grid; place-items: center; font-weight: 600; font-size: 14px;
+  }
+  .author-row .info { display: flex; flex-direction: column; }
+  .author-row .name { font-size: 14px; font-weight: 600; color: var(--t-main); }
+  .author-row .role { font-size: 12px; color: var(--secondary); font-family: var(--mono); letter-spacing: .04em; }
+  .post-footer-cta {
+    background: var(--ee-cream); border-radius: var(--r-lg); border: 1px solid var(--border);
+    padding: 32px; margin: 48px 0;
+    display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: center;
+  }
+  @media (max-width: 760px) { .post-footer-cta { grid-template-columns: 1fr; } }
+  .more-posts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 40px; }
+  @media (max-width: 760px) { .more-posts { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body data-brand="ee" data-screen-label="Blog post — Calm by default">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="../Everything Essential.html" class="logo">
+      <img src="../bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
+      <span>Everything Essential</span>
+    </a>
+    <div class="brand-toggle">
+      <a href="../Everything Essential.html" data-brand="ee" aria-selected="true"><span class="dot"></span> Everything Essential</a>
+      <a href="../Everything Essential.html#friddy" data-brand="friddy" aria-selected="false"><span class="dot"></span> Friddy</a>
+    </div>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav-links">
+      <a href="../Everything Essential.html#what">What we do</a>
+      <a href="../Everything Essential.html#product">Product</a>
+      <a href="About.html">About</a>
+      <a href="Blog.html" class="active">Blog</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile menu">
+    <a href="../Everything Essential.html#what">What we do</a>
+    <a href="../Everything Essential.html#product">Product</a>
+    <a href="About.html">About</a>
+    <a href="Blog.html">Blog</a>
+    <a href="Contact.html">Contact</a>
+    <div class="brand-row">
+      <a href="../Everything Essential.html"><span class="dot" style="background:var(--ee-navy)"></span> Everything Essential</a>
+      <a href="../Everything Essential.html#friddy"><span class="dot" style="background:var(--fr-green)"></span> Friddy</a>
+    </div>
+    <a class="btn btn-primary menu-cta" href="https://apps.apple.com/kr/app/friddy/id6768114689?l=en-GB" target="_blank" rel="noopener">Download Friddy</a>
+  </nav>
+</header>
+
+<article>
+  <section class="page-hero post-hero">
+    <div class="wrap-narrow">
+      <div class="crumb">
+        <a href="../Everything Essential.html">Home</a><span>/</span>
+        <a href="Blog.html">Blog</a><span>/</span>
+        <span>Calm by default</span>
+      </div>
+      <span class="chip" style="margin-bottom: 16px;">Design · Principles</span>
+      <h1>Calm by default: notes on quiet software.</h1>
+      <p class="lead" style="margin-top: 18px;">A few principles we keep coming back to when designing for daily essentials — and the tradeoffs we make so the product can step out of the way.</p>
+      <div class="author-row">
+        <div class="avatar">CF</div>
+        <div class="info">
+          <span class="name">Co-founder One</span>
+          <span class="role">CEO · MAY 14, 2026 · 6 MIN READ</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="featured-image"><span class="ph">[ replace with a thoughtful, calm photograph ]</span></div>
+    </div>
+  </section>
+
+  <section style="padding-top: 56px;">
+    <div class="wrap-narrow">
+      <div class="prose">
+        <p>The best software for daily essentials is the kind you forget you're using. It's calm. It doesn't ask for attention. It does the work and steps out of the way.</p>
+        <p>That's harder than it sounds. Most consumer software has been shaped by years of incentives that pull in the opposite direction — engagement metrics, streaks, push notifications, social proof. The default settings of the industry are loud. Calm is something you have to choose, on purpose, over and over.</p>
+
+        <h2>What &ldquo;calm&rdquo; means to us</h2>
+        <p>When we say calm, we don't mean minimal. We mean a few specific things:</p>
+        <ul>
+          <li><strong>Quiet by default.</strong> No notification you didn't ask for. No badge counts. No "you haven't opened the app in 3 days" prompts.</li>
+          <li><strong>Right on open.</strong> The first screen should already be correct, before you've tapped anything. The product has done the thinking before you arrived.</li>
+          <li><strong>Slow to interrupt, fast to react.</strong> When you do interact, the response is instant. We trade engagement-style nudges for raw responsiveness.</li>
+          <li><strong>Honest defaults.</strong> Settings ship sensible. We don't hide important things behind a paywall or behind ten taps.</li>
+        </ul>
+
+        <blockquote>The wins are quieter: a list that's already right when you open it, an expiry warning that arrives one day before you'd have noticed.</blockquote>
+
+        <h2>The tradeoffs</h2>
+        <p>Calm comes with real costs. We don't get the dopamine hit of a confetti screen. We don't get the easy retention metrics. Our growth is slower, our launch numbers are smaller, and our investors have to be patient with the curve.</p>
+        <p>What we get in exchange is trust. People come back because the product earned a small, quiet place in their life. That's the only retention we want.</p>
+
+        <h2>A few practical decisions</h2>
+        <p>Some of the design choices that follow from this:</p>
+        <ol>
+          <li><strong>One notification per day, maximum.</strong> Unless you ask for more.</li>
+          <li><strong>No streaks.</strong> Missing a day shouldn't feel like failing.</li>
+          <li><strong>No leaderboards or social shaming.</strong> Households are not competitors.</li>
+          <li><strong>No dark patterns.</strong> Unsubscribe in one click. Delete your data in one click. Export your data, always.</li>
+        </ol>
+
+        <h2>Why this matters more for essentials</h2>
+        <p>For categories like food, money, and waste — categories you can't opt out of — calm matters more than usual. People already carry guilt and fatigue here. The last thing they need is software that adds to the noise. The first thing they need is software that quietly takes some of it away.</p>
+        <p>That's the standard we hold ourselves to. We don't always hit it. But it's the standard.</p>
+
+        <div class="post-footer-cta">
+          <div>
+            <span class="eyebrow">Stay in touch</span>
+            <h3 style="margin-top: 8px;">Get the next essay in your inbox.</h3>
+            <p style="margin-top: 6px; font-size: 14px;">A short note from us, roughly once a month. No spam.</p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a class="btn btn-primary" href="Blog.html">Subscribe</a>
+            <a class="btn btn-secondary" href="../Everything Essential.html#friddy">See Friddy</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 64px;">
+        <span class="eyebrow">More from the blog</span>
+        <div class="more-posts">
+          <a class="post-card" href="blog-essential-thesis.html">
+            <div class="img"><span class="tag">Company</span></div>
+            <div class="body">
+              <h3>The essential thesis: why we're starting with food.</h3>
+              <p>The thinking behind Everything Essential, and why our first product is in the kitchen.</p>
+              <span class="meta"><span>MAY 21, 2026</span><span>·</span><span>8 MIN</span></span>
+            </div>
+          </a>
+          <a class="post-card" href="blog-why-friddy.html">
+            <div class="img"><span class="tag">Product</span></div>
+            <div class="body">
+              <h3>Why Friddy is our first product.</h3>
+              <p>Of all the categories we could have started with, why the kitchen?</p>
+              <span class="meta"><span>MAY 07, 2026</span><span>·</span><span>5 MIN</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <a href="../Everything Essential.html" class="logo">
+          <img src="../bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
+          <span>Everything Essential</span>
+        </a>
+        <p style="margin-top:14px; font-size:14px; max-width: 36ch;">A company building intelligent systems for the essential decisions of daily life.</p>
+      </div>
+      <div><h4>Company</h4><ul><li><a href="About.html">About</a></li><li><a href="Blog.html">Blog</a></li></ul></div>
+      <div><h4>Product</h4><ul><li><a href="../Everything Essential.html#friddy">Friddy</a></li><li><a href="../Everything Essential.html#how">How it works</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="Contact.html">Contact</a></li><li><a href="#">Press</a></li><li><a href="#">Partners</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="Privacy.html">Privacy</a></li><li><a href="Privacy-ko.html">개인정보 처리방침</a></li><li><a href="Terms.html">Terms</a></li></ul></div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Everything Essential. All rights reserved.</span>
+      <span class="links">
+        <a href="Privacy.html">Privacy</a>
+        <a href="Terms.html">Terms</a>
+        <a href="Contact.html">Contact</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(btn){var b=btn.closest('.topbar');var o=b.classList.toggle('menu-open');btn.setAttribute('aria-expanded',o);}
+document.addEventListener('click',function(e){var a=e.target.closest('.mobile-nav a');if(a){var b=a.closest('.topbar');if(b)b.classList.remove('menu-open');}});
+</script>
+</body>
+</html>
