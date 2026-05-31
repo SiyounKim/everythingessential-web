@@ -1,0 +1,17 @@
+{
+  "name": "everythingessential-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for Everything Essential.",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "preview": "npx vercel@latest",
+    "deploy": "npx vercel@latest --prod"
+  },
+  "keywords": [
+    "everything-essential",
+    "static-site",
+    "vercel"
+  ],
+  "license": "UNLICENSED"
+}
