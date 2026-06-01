@@ -1,6 +1,38 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/pages/About",
+      "destination": "/About",
+      "permanent": true
+    },
+    {
+      "source": "/pages/Blog",
+      "destination": "/Blog",
+      "permanent": true
+    },
+    {
+      "source": "/pages/Contact",
+      "destination": "/Contact",
+      "permanent": true
+    },
+    {
+      "source": "/pages/Privacy",
+      "destination": "/Privacy",
+      "permanent": true
+    },
+    {
+      "source": "/pages/Privacy-ko",
+      "destination": "/Privacy-ko",
+      "permanent": true
+    },
+    {
+      "source": "/pages/Terms",
+      "destination": "/Terms",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
