@@ -904,7 +904,7 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
 <header class="topbar">
   <div class="wrap topbar-inner">
     <a href="#" class="logo" aria-label="Everything Essential home" onclick="setBrand('ee'); return false;">
-      <img src="bow-logo-transparent.png" class="logo-mark" id="logoMark" alt="Everything Essential">
+      <img src="/design/images/brand/bow-logo-transparent.png" class="logo-mark" id="logoMark" alt="Everything Essential">
       <span id="logoText">Everything Essential</span>
     </a>
 
@@ -920,9 +920,9 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
     <nav class="nav-links" aria-label="Primary">
       <a href="#what">What we do</a>
       <a href="#product">Product</a>
-      <a href="/About.html">About</a>
-      <a href="/Blog.html">Blog</a>
-      <a href="/Contact.html">Contact</a>
+      <a href="/About">About</a>
+      <a href="/Blog">Blog</a>
+      <a href="/Contact">Contact</a>
     </nav>
 
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
@@ -933,9 +933,9 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
   <nav class="mobile-nav" aria-label="Mobile menu">
     <a href="#what" onclick="closeMenu()">What we do</a>
     <a href="#product" onclick="closeMenu()">Product</a>
-    <a href="/About.html">About</a>
-    <a href="/Blog.html">Blog</a>
-    <a href="/Contact.html">Contact</a>
+    <a href="/About">About</a>
+    <a href="/Blog">Blog</a>
+    <a href="/Contact">Contact</a>
     <div class="brand-row">
       <button type="button" data-brand="ee" aria-selected="true" onclick="setBrand('ee'); closeMenu();"><span class="dot" style="background:var(--ee-navy)"></span> Everything Essential</button>
       <button type="button" data-brand="friddy" aria-selected="false" onclick="setBrand('friddy'); closeMenu();"><span class="dot" style="background:var(--fr-green)"></span> Friddy</button>
@@ -1127,7 +1127,7 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
       <div class="grid">
         <div>
           <a href="#" class="logo" onclick="setBrand('ee'); return false;">
-            <img src="bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
+            <img src="/design/images/brand/bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
             <span>Everything Essential</span>
           </a>
           <p style="margin-top:14px; font-size:14px; max-width: 38ch;">A company building intelligent systems for the essential decisions of daily life.</p>
@@ -1135,8 +1135,8 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
         <div>
           <h4>Company</h4>
           <ul>
-            <li><a href="/About.html">About</a></li>
-            <li><a href="/Blog.html">Blog</a></li>
+            <li><a href="/About">About</a></li>
+            <li><a href="/Blog">Blog</a></li>
           </ul>
         </div>
         <div>
@@ -1149,7 +1149,7 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
         <div>
           <h4>Resources</h4>
           <ul>
-            <li><a href="/Contact.html">Contact</a></li>
+            <li><a href="/Contact">Contact</a></li>
             <li><a href="#">Press</a></li>
             <li><a href="#">Partners</a></li>
           </ul>
@@ -1157,9 +1157,9 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
         <div>
           <h4>Legal</h4>
           <ul>
-            <li><a href="/Privacy.html">Privacy</a></li>
-            <li><a href="/Privacy-ko.html">개인정보 처리방침</a></li>
-            <li><a href="/Terms.html">Terms</a></li>
+            <li><a href="/Privacy">Privacy</a></li>
+            <li><a href="/Privacy-ko">개인정보 처리방침</a></li>
+            <li><a href="/Terms">Terms</a></li>
           </ul>
         </div>
       </div>
@@ -1200,16 +1200,16 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
         <div>
           <div class="iphone" aria-hidden="true">
             <div class="iphone-screen">
-              <img id="phoneShot" src="simulator_screenshot_84F58DBF-7C54-48CB-8135-86350A2EE0C3.png" alt="Friddy home screen">
+              <img id="phoneShot" src="/design/images/source/friddy-recipe-simulator.png" alt="Friddy home screen">
             </div>
           </div>
           <div class="screen-picker" role="tablist" aria-label="Preview Friddy screens">
-            <button type="button" aria-pressed="true"  data-src="simulator_screenshot_84F58DBF-7C54-48CB-8135-86350A2EE0C3.png"      onclick="setShot(this)">Home</button>
-            <button type="button" aria-pressed="false" data-src="friddy-shopping.png"  onclick="setShot(this)">Shopping</button>
-            <button type="button" aria-pressed="false" data-src="friddy-inventory.png" onclick="setShot(this)">Inventory</button>
-            <button type="button" aria-pressed="false" data-src="friddy-recipe.png"    onclick="setShot(this)">Recipe</button>
-            <button type="button" aria-pressed="false" data-src="friddy-cook.png"      onclick="setShot(this)">Cook</button>
-            <button type="button" aria-pressed="false" data-src="friddy-insights.png"  onclick="setShot(this)">Insights</button>
+            <button type="button" aria-pressed="true"  data-src="/design/images/source/friddy-recipe-simulator.png"      onclick="setShot(this)">Home</button>
+            <button type="button" aria-pressed="false" data-src="/design/images/product/friddy-shopping.png"  onclick="setShot(this)">Shopping</button>
+            <button type="button" aria-pressed="false" data-src="/design/images/product/friddy-inventory.png" onclick="setShot(this)">Inventory</button>
+            <button type="button" aria-pressed="false" data-src="/design/images/product/friddy-recipe.png"    onclick="setShot(this)">Recipe</button>
+            <button type="button" aria-pressed="false" data-src="/design/images/product/friddy-cook.png"      onclick="setShot(this)">Cook</button>
+            <button type="button" aria-pressed="false" data-src="/design/images/product/friddy-insights.png"  onclick="setShot(this)">Insights</button>
           </div>
         </div>
 
@@ -1500,7 +1500,7 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
       <div class="grid">
         <div>
           <a href="#" class="logo" onclick="setBrand('ee'); return false;">
-            <img src="bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
+            <img src="/design/images/brand/bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
             <span>Friddy <span class="small" style="color: var(--fr-sage); font-weight:500;">by Everything Essential</span></span>
           </a>
           <p style="margin-top:14px; font-size:14px; max-width: 38ch;">A smart food operating system for the modern household. Cook more, waste less, spend smarter.</p>
@@ -1517,24 +1517,24 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
           <h4>Company</h4>
           <ul>
             <li><a href="#" onclick="setBrand('ee'); return false;">Everything Essential</a></li>
-            <li><a href="/About.html">About</a></li>
-            <li><a href="/Blog.html">Blog</a></li>
+            <li><a href="/About">About</a></li>
+            <li><a href="/Blog">Blog</a></li>
           </ul>
         </div>
         <div>
           <h4>Contact</h4>
           <ul>
             <li><a href="/cdn-cgi/l/email-protection#d1b4b4ffb7a3b8b5b5a891b6bcb0b8bdffb2bebc"><span class="__cf_email__" data-cfemail="7217175c14001b16160b32151f131b1e5c111d1f">[email&#160;protected]</span></a></li>
-            <li><a href="/Contact.html">Contact us</a></li>
+            <li><a href="/Contact">Contact us</a></li>
             <li><a href="#">Partner with us</a></li>
           </ul>
         </div>
         <div>
           <h4>Legal</h4>
           <ul>
-            <li><a href="/Privacy.html">Privacy</a></li>
-            <li><a href="/Privacy-ko.html">개인정보 처리방침</a></li>
-            <li><a href="/Terms.html">Terms</a></li>
+            <li><a href="/Privacy">Privacy</a></li>
+            <li><a href="/Privacy-ko">개인정보 처리방침</a></li>
+            <li><a href="/Terms">Terms</a></li>
           </ul>
         </div>
       </div>
