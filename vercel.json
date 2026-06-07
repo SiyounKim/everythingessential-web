@@ -19,17 +19,27 @@
     },
     {
       "source": "/pages/Privacy",
-      "destination": "/Privacy",
+      "destination": "/privacy-policy-for-friddy",
       "permanent": true
     },
     {
       "source": "/pages/Privacy-ko",
-      "destination": "/Privacy-ko",
+      "destination": "/ko-privacy-policy-for-friddy",
       "permanent": true
     },
     {
       "source": "/pages/Terms",
       "destination": "/Terms",
+      "permanent": true
+    },
+    {
+      "source": "/Privacy",
+      "destination": "/privacy-policy-for-friddy",
+      "permanent": true
+    },
+    {
+      "source": "/Privacy-ko",
+      "destination": "/ko-privacy-policy-for-friddy",
       "permanent": true
     }
   ],

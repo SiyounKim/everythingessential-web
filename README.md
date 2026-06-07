@@ -2,6 +2,13 @@
 
 Static website for Everything Essential and Friddy.
 
+## Repository organization
+
+- [`screens/`](screens/) indexes the home, company, blog, and legal screens.
+- [`design/`](design/) indexes shared styles, brand graphics, and product imagery.
+
+Deployable HTML and assets remain at the repository root for compatibility with Vercel and standard static hosting. The index folders organize the files in GitHub without changing their public paths.
+
 ## Local preview
 
 Run a local static server from the repository root:
