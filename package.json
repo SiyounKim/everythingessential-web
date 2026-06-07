@@ -4,7 +4,7 @@
   "private": true,
   "description": "Static website for Everything Essential.",
   "scripts": {
-    "dev": "python3 -m http.server 3000",
+    "dev": "python3 scripts/dev_server.py",
     "preview": "npx vercel@latest",
     "deploy": "npx vercel@latest --prod"
   },

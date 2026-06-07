@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css">
+<link rel="stylesheet" href="/design/styles/site.css">
 <style>
   :root { --sans: "Manrope", "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif; }
   body, .prose p, .prose li, h1, h2, h3, h4, .lead { font-family: "Noto Sans KR", "Manrope", sans-serif; }
@@ -20,7 +20,7 @@
 <header class="topbar">
   <div class="topbar-inner">
     <a href="/" class="logo">
-      <img src="/bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
+      <img src="/design/images/brand/bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
       <span>Everything Essential</span>
     </a>
     <div class="brand-toggle">
@@ -28,9 +28,9 @@
       <a href="/#friddy" data-brand="friddy" aria-selected="true"><span class="dot"></span> Friddy</a>
     </div>
     <nav class="nav-links">
-      <a href="About.html">About</a>
-      <a href="Blog.html">Blog</a>
-      <a href="Contact.html">Contact</a>
+      <a href="/About">About</a>
+      <a href="/Blog">Blog</a>
+      <a href="/Contact">Contact</a>
     </nav>
     <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" onclick="toggleMenu(this)">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -39,9 +39,9 @@
   <nav class="mobile-nav" aria-label="모바일 메뉴">
     <a href="/#what">What we do</a>
     <a href="/#product">Product</a>
-    <a href="About.html">About</a>
-    <a href="Blog.html">Blog</a>
-    <a href="Contact.html">Contact</a>
+    <a href="/About">About</a>
+    <a href="/Blog">Blog</a>
+    <a href="/Contact">Contact</a>
     <div class="brand-row">
       <a href="/"><span class="dot" style="background:var(--ee-navy)"></span> Everything Essential</a>
       <a href="/#friddy"><span class="dot" style="background:var(--fr-green)"></span> Friddy</a>
@@ -61,8 +61,8 @@
     <h1 style="margin-top: 14px;">Friddy 개인정보 처리방침</h1>
     <p class="lead" style="margin-top: 20px;">Friddy는 Everything Essential이 운영하는 AI 기반 주방·식료품·식단 관리 앱입니다. 본 방침은 Friddy 이용 시 저희가 정보를 어떻게 수집·이용·보호하는지 설명합니다.</p>
     <div class="lang-toggle" role="group" aria-label="언어">
-      <a href="Privacy.html">English</a>
-      <a href="Privacy-ko.html" aria-current="true">한국어</a>
+      <a href="/Privacy">English</a>
+      <a href="/Privacy-ko" aria-current="true">한국어</a>
     </div>
     <div class="meta">
       <span>시행일 · 2026.05.05</span>
@@ -336,7 +336,7 @@
           Everything Essential<br>
           이메일: <a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a>
         </p>
-        <p>본 개인정보 처리방침의 영문 버전은 <a href="Privacy.html">English version</a>에서 확인하실 수 있습니다.</p>
+        <p>본 개인정보 처리방침의 영문 버전은 <a href="/Privacy">English version</a>에서 확인하실 수 있습니다.</p>
 
         <hr>
         <p style="font-size: 13px; color: var(--secondary);">Copyright © 2026 Everything Essential. All rights reserved.</p>
@@ -350,22 +350,22 @@
     <div class="grid">
       <div>
         <a href="/" class="logo">
-          <img src="/bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
+          <img src="/design/images/brand/bow-logo-transparent.png" class="logo-mark" alt="Everything Essential">
           <span>Everything Essential</span>
         </a>
         <p style="margin-top:14px; font-size:14px; max-width: 36ch;">A company building intelligent systems for the essential decisions of daily life.</p>
       </div>
-      <div><h4>Company</h4><ul><li><a href="About.html">About</a></li><li><a href="Blog.html">Blog</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="/About">About</a></li><li><a href="/Blog">Blog</a></li></ul></div>
       <div><h4>Product</h4><ul><li><a href="/#friddy">Friddy</a></li><li><a href="https://apps.apple.com/kr/app/friddy/id6768114689?l=en-GB" target="_blank" rel="noopener">Download iOS</a></li></ul></div>
-      <div><h4>Resources</h4><ul><li><a href="Contact.html">Contact</a></li><li><a href="#">Press</a></li><li><a href="#">Partners</a></li></ul></div>
-      <div><h4>Legal</h4><ul><li><a href="Privacy.html">Privacy</a></li><li><a href="Privacy-ko.html">개인정보 처리방침</a></li><li><a href="Terms.html">Terms</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="/Contact">Contact</a></li><li><a href="#">Press</a></li><li><a href="#">Partners</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/Privacy">Privacy</a></li><li><a href="/Privacy-ko">개인정보 처리방침</a></li><li><a href="/Terms">Terms</a></li></ul></div>
     </div>
     <div class="bottom">
       <span>© 2026 Everything Essential. All rights reserved.</span>
       <span class="links">
-        <a href="Privacy.html">Privacy</a>
-        <a href="Terms.html">Terms</a>
-        <a href="Contact.html">Contact</a>
+        <a href="/Privacy">Privacy</a>
+        <a href="/Terms">Terms</a>
+        <a href="/Contact">Contact</a>
       </span>
     </div>
   </div>
