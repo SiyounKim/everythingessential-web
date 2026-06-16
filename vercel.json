@@ -16,8 +16,6 @@
     { "source": "/Contact", "destination": "/screens/company/contact.html" },
     { "source": "/Privacy", "destination": "/screens/legal/privacy.html" },
     { "source": "/Privacy-ko", "destination": "/screens/legal/privacy-ko.html" },
-    { "source": "/privacy-policy-for-friddy", "destination": "/screens/legal/privacy.html" },
-    { "source": "/ko-privacy-policy-for-friddy", "destination": "/screens/legal/privacy-ko.html" },
     { "source": "/Terms", "destination": "/screens/legal/terms.html" },
     { "source": "/blog-business-cards", "destination": "/screens/blog/posts/business-cards.html" },
     { "source": "/blog-calm-by-default", "destination": "/screens/blog/posts/calm-by-default.html" },
