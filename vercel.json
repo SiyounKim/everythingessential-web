@@ -2,10 +2,6 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/privacy-policy-for-friddy", "destination": "/Privacy", "permanent": true },
-    { "source": "/privacy-policy-for-friddy/:path*", "destination": "/Privacy", "permanent": true },
-    { "source": "/ko-privacy-policy-for-friddy", "destination": "/Privacy-ko", "permanent": true },
-    { "source": "/ko-privacy-policy-for-friddy/:path*", "destination": "/Privacy-ko", "permanent": true },
     { "source": "/pages/About", "destination": "/About", "permanent": true },
     { "source": "/pages/Blog", "destination": "/Blog", "permanent": true },
     { "source": "/pages/Contact", "destination": "/Contact", "permanent": true },
