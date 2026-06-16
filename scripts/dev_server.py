@@ -13,6 +13,8 @@ ROUTES = {
     "/Contact": "screens/company/contact.html",
     "/Privacy": "screens/legal/privacy.html",
     "/Privacy-ko": "screens/legal/privacy-ko.html",
+    "/privacy-policy-for-friddy": "screens/legal/privacy.html",
+    "/ko-privacy-policy-for-friddy": "screens/legal/privacy-ko.html",
     "/Terms": "screens/legal/terms.html",
     "/blog-business-cards": "screens/blog/posts/business-cards.html",
     "/blog-calm-by-default": "screens/blog/posts/calm-by-default.html",
