@@ -12,18 +12,18 @@
     { "source": "/pages/Terms", "destination": "/Terms", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/", "destination": "/screens/home.html" },
-    { "source": "/About", "destination": "/screens/company/about.html" },
-    { "source": "/Blog", "destination": "/screens/blog/index.html" },
-    { "source": "/Contact", "destination": "/screens/company/contact.html" },
-    { "source": "/Privacy", "destination": "/screens/legal/privacy.html" },
-    { "source": "/Privacy-ko", "destination": "/screens/legal/privacy-ko.html" },
-    { "source": "/Terms", "destination": "/screens/legal/terms.html" },
-    { "source": "/blog-business-cards", "destination": "/screens/blog/posts/business-cards.html" },
-    { "source": "/blog-calm-by-default", "destination": "/screens/blog/posts/calm-by-default.html" },
-    { "source": "/blog-essential-thesis", "destination": "/screens/blog/posts/essential-thesis.html" },
-    { "source": "/blog-sd-card-guide", "destination": "/screens/blog/posts/sd-card-guide.html" },
-    { "source": "/blog-why-friddy", "destination": "/screens/blog/posts/why-friddy.html" }
+    { "source": "/", "destination": "/screens/home" },
+    { "source": "/About", "destination": "/screens/company/about" },
+    { "source": "/Blog", "destination": "/screens/blog" },
+    { "source": "/Contact", "destination": "/screens/company/contact" },
+    { "source": "/Privacy", "destination": "/screens/legal/privacy" },
+    { "source": "/Privacy-ko", "destination": "/screens/legal/privacy-ko" },
+    { "source": "/Terms", "destination": "/screens/legal/terms" },
+    { "source": "/blog-business-cards", "destination": "/screens/blog/posts/business-cards" },
+    { "source": "/blog-calm-by-default", "destination": "/screens/blog/posts/calm-by-default" },
+    { "source": "/blog-essential-thesis", "destination": "/screens/blog/posts/essential-thesis" },
+    { "source": "/blog-sd-card-guide", "destination": "/screens/blog/posts/sd-card-guide" },
+    { "source": "/blog-why-friddy", "destination": "/screens/blog/posts/why-friddy" }
   ],
   "headers": [
     {
