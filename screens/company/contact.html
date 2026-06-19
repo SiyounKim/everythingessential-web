@@ -20,6 +20,7 @@
 <meta name="theme-color" content="#274490">
 <link rel="icon" type="image/png" href="/design/images/brand/everything-essential-logo-white.png">
 <link rel="apple-touch-icon" href="/design/images/brand/everything-essential-logo-white.png">
+<script src="/design/scripts/forms.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -133,7 +134,11 @@
         </div>
       </div>
 
-      <form class="form" onsubmit="event.preventDefault(); this.querySelector('.sent').hidden=false;">
+      <form class="form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="7a4c2387-b1c8-475f-a29a-34ddd1e89074">
+        <input type="hidden" name="subject" value="New contact message — Everything Essential">
+        <input type="hidden" name="from_name" value="Everything Essential — Contact form">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none;">
         <span class="eyebrow">Send a message</span>
         <h3 style="margin-top: 4px;">Tell us what you're working on.</h3>
 
@@ -163,6 +168,9 @@
 
         <p class="sent" hidden style="margin-top: 8px; font-size: 13px; color: var(--ee-navy);">
           ✓ Message sent. We'll reply within 2 business days.
+        </p>
+        <p class="form-error" hidden style="margin-top: 8px; font-size: 13px; color: #b3261e;">
+          Something went wrong. Please email <a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a>.
         </p>
       </form>
     </div>
