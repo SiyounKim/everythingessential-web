@@ -77,7 +77,7 @@
       <a href="/Privacy-ko">한국어</a>
     </div>
     <div class="meta">
-      <span>EFFECTIVE · JUNE 16, 2026</span>
+      <span>EFFECTIVE · JUNE 27, 2026</span>
       <span class="dot"></span>
       <span>OPERATOR · EVERYTHING ESSENTIAL</span>
       <span class="dot"></span>
@@ -127,6 +127,8 @@
           <li>Profile preferences, such as language, household size, budget range, dietary preferences, allergy information, and grocery preferences</li>
           <li>Subscription or premium status</li>
         </ul>
+        <p><strong>Guest (anonymous) accounts.</strong> When you first open Friddy, the app signs you in automatically with an anonymous guest account so you can use Friddy without registering or providing any personal details. A guest account is identified only by a random account ID issued by Firebase Authentication; for a guest account we do not collect your name, email, or phone number. Data you create as a guest — such as kitchen inventory, shopping lists, and preferences — is stored under that anonymous ID.</p>
+        <p><strong>Upgrading a guest account.</strong> You can later create a permanent account by adding an email address and password. Your existing guest account is then upgraded in place: the same account ID is kept, so the data you created as a guest carries over to your registered account. From that point we collect and store your email address (and display name, if provided). If you instead sign in to a different existing account, the data under your guest account is not transferred and remains associated only with the anonymous ID. You can delete a guest or registered account at any time in the app (Profile → Settings → Account), which removes the associated data on the same schedule described in "Data retention".</p>
 
         <h3>1.2 Kitchen and inventory data</h3>
         <p>To provide Friddy's inventory and food-planning features, we may collect information you enter or generate in the app, including:</p>
@@ -236,7 +238,6 @@
               <tr><td>Google Gemini</td><td>Receipt AI analysis</td></tr>
               <tr><td>Google (YouTube Data API)</td><td>Retrieving public video title and description for recipe analysis</td></tr>
               <tr><td>Apple</td><td>Payment processing (App Store)</td></tr>
-              <tr><td>Kakao</td><td>Social login</td></tr>
               <tr><td>Coupang Partners</td><td>In-app product price comparison and affiliate purchase links</td></tr>
             </tbody>
           </table>
@@ -284,6 +285,7 @@
             <thead><tr><th>Data category</th><th>Retention period</th></tr></thead>
             <tbody>
               <tr><td>Account information</td><td>Until account deletion</td></tr>
+              <tr><td>Guest (anonymous) account data</td><td>Until the account is deleted or upgraded (same schedule as registered-account data)</td></tr>
               <tr><td>Inventory and shopping data</td><td>Until account deletion</td></tr>
               <tr><td>Receipt images</td><td>30 days after AI analysis</td></tr>
               <tr><td>Receipt extracted text</td><td>Until account deletion</td></tr>
@@ -352,6 +354,9 @@
 
         <h2 id="changes">14. Changes to this Privacy Policy</h2>
         <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify users through the app, email, website, or another appropriate method. The "Effective Date" at the top of this document indicates when the policy was last updated.</p>
+        <ul>
+          <li>June 27, 2026 — Added anonymous (guest) accounts and the guest-to-registered account upgrade flow.</li>
+        </ul>
 
         <h2 id="contact">15. Contact us</h2>
         <p>If you have any questions, requests, or concerns about this Privacy Policy or how Friddy handles personal information, please contact:</p>
