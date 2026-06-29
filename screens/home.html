@@ -771,7 +771,7 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
 }
 .recipe .body .meta { display: flex; gap: 10px; font-size: 11px; color: var(--fr-sage); font-family: var(--mono); }
 
-/* Mock: Reorder card */
+/* Mock: AI Price Insights card (legacy class name: .reorder) */
 .reorder {
   margin-top: 6px; background: var(--fr-green); color: var(--fr-offwhite);
   border-radius: 12px; padding: 14px;
@@ -1095,7 +1095,7 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
         <div class="copy">
           <span class="eyebrow">Our first product</span>
           <h2>A smart food operating system, beginning at the kitchen.</h2>
-          <p>Friddy connects grocery planning, kitchen inventory, expiry tracking, recipe recommendations, and reorder — into one calm, joined-up product. It's the first place we've put the Everything Essential thesis into practice.</p>
+          <p>Friddy connects grocery planning, kitchen inventory, expiry tracking, recipe recommendations, and price comparison — into one calm, joined-up product. It's the first place we've put the Everything Essential thesis into practice.</p>
           <div class="cta-row">
             <button class="btn btn-primary" onclick="setBrand('friddy')">
               Explore Friddy
@@ -1112,7 +1112,7 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
             <span class="tag">Inventory</span>
             <span class="tag">Expiry</span>
             <span class="tag">Recipes</span>
-            <span class="tag">Reorder</span>
+            <span class="tag">Prices</span>
             <span class="tag">Budget</span>
           </div>
           <p style="margin-top:18px; color: var(--t-soft); max-width: 36ch;">One loop, from shopping list to leftover dinner. Designed for households, built for everyday life.</p>
@@ -1239,7 +1239,7 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
           <span class="eyebrow">How it works</span>
           <h2>One loop, end to end — from grocery to leftover.</h2>
         </div>
-        <p class="lead">Most apps cover one stage of the kitchen. Friddy covers the whole arc, so each step makes the next one smarter. The fridge tells the list; the list tells the recipes; the recipes feed the reorder.</p>
+        <p class="lead">Most apps cover one stage of the kitchen. Friddy covers the whole arc, so each step makes the next one smarter. The fridge tells the list; the list tells the recipes; the recipes feed the next shop.</p>
       </div>
 
       <div class="loop-grid">
@@ -1265,7 +1265,7 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
             <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13l2 4h3v8H3z"/><circle cx="8" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg>
           </div>
           <h4>Purchase confirmation</h4>
-          <p>Receipts, e-grocery, or a quick scan — Friddy keeps track.</p>
+          <p>Scan a receipt or add manually — Friddy updates your inventory automatically.</p>
         </article>
         <article class="step">
           <span class="n">04</span>
@@ -1273,7 +1273,7 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
             <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v6a6 6 0 1 1-12 0V4z"/><path d="M9 4v3M15 4v3"/></svg>
           </div>
           <h4>Inventory update</h4>
-          <p>The kitchen updates itself: pantry, fridge, freezer.</p>
+          <p>Your inventory updates itself as you buy and use items.</p>
         </article>
         <article class="step">
           <span class="n">05</span>
@@ -1296,8 +1296,8 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
           <div class="ic">
             <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 16-5l2-2v6h-6l2-2A6 6 0 0 0 6 12"/><path d="M21 12a9 9 0 0 1-16 5l-2 2v-6h6l-2 2A6 6 0 0 0 18 12"/></svg>
           </div>
-          <h4>Reorder when needed</h4>
-          <p>The staples come back on their own. You stay in control.</p>
+          <h4>Price comparison</h4>
+          <p>AI tells you if now&rsquo;s the right time to buy. Check Coupang prices and purchase directly.</p>
         </article>
       </div>
     </div>
@@ -1318,8 +1318,8 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
         <!-- 1. Smart grocery list -->
         <article class="mock span-2">
           <span class="label">01 · Smart grocery list</span>
-          <h4>Knows your kitchen before you do.</h4>
-          <p class="desc">Items appear because something ran out, expired, or fits this week's plan — not because you remembered.</p>
+          <h4>Build your list, skip the duplicates.</h4>
+          <p class="desc">Build your shopping list, prevent duplicate purchases, and compare Coupang prices.</p>
           <div class="mock-list">
             <div class="item">
               <span class="left">
@@ -1357,15 +1357,15 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
         <!-- 2. Inventory -->
         <article class="mock span-2">
           <span class="label">02 · Kitchen inventory</span>
-          <h4>The fridge, pantry, and freezer — in one view.</h4>
-          <p class="desc">Each item knows its quantity, freshness, and where it lives.</p>
+          <h4>Sorted by status or category.</h4>
+          <p class="desc">Manage ingredients by status (expired / expiring / fresh) or category — quantity and freshness at a glance.</p>
           <div class="inv">
             <div class="cell"><div class="ph"></div><span class="name">Whole milk</span><span class="qty">1.5L · 4d left</span><div class="bar"><span style="width:60%"></span></div></div>
             <div class="cell low"><div class="ph"></div><span class="name">Spinach</span><span class="qty">90g · 2d left</span><div class="bar"><span style="width:25%"></span></div></div>
-            <div class="cell"><div class="ph"></div><span class="name">Greek yogurt</span><span class="qty">500g · 6d</span><div class="bar"><span style="width:75%"></span></div></div>
-            <div class="cell"><div class="ph"></div><span class="name">Pasta</span><span class="qty">500g · pantry</span><div class="bar"><span style="width:90%"></span></div></div>
+            <div class="cell"><div class="ph"></div><span class="name">Greek yogurt</span><span class="qty">500g · 6d left</span><div class="bar"><span style="width:75%"></span></div></div>
+            <div class="cell"><div class="ph"></div><span class="name">Pasta</span><span class="qty">500g · grains</span><div class="bar"><span style="width:90%"></span></div></div>
             <div class="cell low"><div class="ph"></div><span class="name">Eggs</span><span class="qty">2 left · low</span><div class="bar"><span style="width:20%"></span></div></div>
-            <div class="cell"><div class="ph"></div><span class="name">Frozen peas</span><span class="qty">300g · freezer</span><div class="bar"><span style="width:80%"></span></div></div>
+            <div class="cell"><div class="ph"></div><span class="name">Peas</span><span class="qty">300g · veg</span><div class="bar"><span style="width:80%"></span></div></div>
           </div>
         </article>
 
@@ -1411,31 +1411,31 @@ section { padding: clamp(72px, 9vw, 128px) 0; }
           </div>
         </article>
 
-        <!-- 5. Reorder -->
+        <!-- 5. AI Price Insights -->
         <article class="mock span-2">
-          <span class="label">05 · Reorder card</span>
-          <h4>Staples that quietly come back.</h4>
-          <p class="desc">Friddy proposes a refill bundle every week. You approve, edit, or skip — never automatic, always in control.</p>
+          <span class="label">05 · AI Price Insights</span>
+          <h4>Buy now, or wait?</h4>
+          <p class="desc">For items on your list, Friddy checks current Coupang prices and tells you whether it's a good time to buy — with a direct purchase link.</p>
           <div class="reorder">
             <div class="top">
-              <span class="label" style="color: var(--fr-papaya);">REORDER · TUE</span>
-              <span class="price">$18.40</span>
+              <span class="label" style="color: var(--fr-papaya);">PRICE CHECK · COUPANG</span>
+              <span class="price">$3.20</span>
+            </div>
+            <div class="item-row">
+              <div class="ph"></div>
+              <div style="flex:1;">
+                <div class="name">Olive oil · 500ml</div>
+                <div class="qty">12% below your average — good time to buy</div>
+              </div>
             </div>
             <div class="item-row">
               <div class="ph"></div>
               <div style="flex:1;">
                 <div class="name">Oat milk · 2 ctn</div>
-                <div class="qty">routine · weekly</div>
+                <div class="qty">near recent high — consider waiting</div>
               </div>
             </div>
-            <div class="item-row">
-              <div class="ph"></div>
-              <div style="flex:1;">
-                <div class="name">Olive oil · 1 bottle</div>
-                <div class="qty">running low</div>
-              </div>
-            </div>
-            <div class="btn-confirm">Confirm reorder</div>
+            <div class="btn-confirm">Buy on Coupang</div>
           </div>
         </article>
 
