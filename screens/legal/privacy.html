@@ -79,7 +79,7 @@
       <a href="/Privacy-ko">한국어</a>
     </div>
     <div class="meta">
-      <span>EFFECTIVE · JULY 10, 2026</span>
+      <span>EFFECTIVE · JULY 20, 2026</span>
       <span class="dot"></span>
       <span>OPERATOR · EVERYTHING ESSENTIAL</span>
       <span class="dot"></span>
@@ -170,7 +170,7 @@
         <div class="note">You should avoid uploading receipts or fridge/kitchen photos that contain unnecessary sensitive information. If possible, crop or hide information not needed for purchase verification or food-item recognition.</div>
 
         <h3>1.5 AI interaction data</h3>
-        <p>Friddy uses Anthropic's Claude API for recipe analysis and Google's Gemini API for receipt and fridge/kitchen photo analysis. Both providers contractually agree not to use data submitted through their APIs to train their models. Data sent to these providers is processed only to generate the specific output requested by the user and is not retained by the providers beyond their stated retention periods.</p>
+        <p>Friddy uses Anthropic's Claude API for recipe analysis, expiry prediction, price analysis, and spending insights based on your purchase history and current market prices, and Google's Gemini API for receipt and fridge/kitchen photo analysis. Both providers contractually agree not to use data submitted through their APIs to train their models. Data sent to these providers is processed only to generate the specific output requested by the user and is not retained by the providers beyond their stated retention periods.</p>
         <p>Depending on the AI feature, we may process:</p>
         <ul>
           <li>Your inventory data</li>
@@ -204,7 +204,7 @@
           <li>Authentication and security logs</li>
           <li>Approximate session activity</li>
         </ul>
-        <p>This information helps us maintain app stability, detect abuse, improve user experience, and secure the Service.</p>
+        <p>This information helps us maintain app stability, detect abuse, improve user experience, and secure the Service. Device integrity signals (Google Play Integrity / Apple DeviceCheck) may be processed to prevent abuse.</p>
 
         <h2 id="use">2. How we use your information</h2>
         <p>We use the information we collect for the following purposes.</p>
@@ -238,11 +238,11 @@
           <table>
             <thead><tr><th>Processor</th><th>Purpose</th></tr></thead>
             <tbody>
-              <tr><td>Google Firebase</td><td>Authentication, database, cloud functions, storage</td></tr>
+              <tr><td>Google Firebase</td><td>Authentication, database, cloud functions, storage, usage analytics (Google Analytics for Firebase), and crash reporting (Firebase Crashlytics)</td></tr>
               <tr><td>Anthropic</td><td>Recipe AI analysis, expiry prediction, price analysis</td></tr>
               <tr><td>Google Gemini</td><td>Receipt and fridge/kitchen photo analysis</td></tr>
               <tr><td>Google (YouTube Data API)</td><td>Retrieving public video title and description for recipe analysis</td></tr>
-              <tr><td>Apple</td><td>Payment processing (App Store)</td></tr>
+              <tr><td>Apple App Store &amp; Google Play</td><td>Payment processing (Friddy does not collect card details; we only receive a signed receipt confirming the purchase)</td></tr>
               <tr><td>Coupang Partners</td><td>Product search, recommendations, and affiliate purchase links on the shopping screen</td></tr>
             </tbody>
           </table>
@@ -360,6 +360,7 @@
         <h2 id="changes">14. Changes to this Privacy Policy</h2>
         <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify users through the app, email, website, or another appropriate method. The "Effective Date" at the top of this document indicates when the policy was last updated.</p>
         <ul>
+          <li>July 20, 2026 — Named usage-analytics and crash-reporting tools (Firebase Analytics/Crashlytics), added Google Play payments, and clarified AI price-analysis.</li>
           <li>July 10, 2026 — Added fridge/kitchen photo scanning (analyzed via Google Gemini) to automatically recognize food items for your inventory; clarified that the Coupang Partners integration covers product search and recommendations shown on the shopping screen and added the required commission disclosure; changed the retention period for receipt and fridge/kitchen photos to "until account deletion."</li>
           <li>June 27, 2026 — Added anonymous (guest) accounts and the guest-to-registered account upgrade flow.</li>
         </ul>
