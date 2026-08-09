@@ -82,7 +82,7 @@
       <a href="/Privacy-ko">한국어</a>
     </div>
     <div class="meta">
-      <span>EFFECTIVE · JULY 20, 2026</span>
+      <span>EFFECTIVE · AUGUST 9, 2026</span>
       <span class="dot"></span>
       <span>OPERATOR · EVERYTHING ESSENTIAL</span>
       <span class="dot"></span>
@@ -173,7 +173,7 @@
         <div class="note">You should avoid uploading receipts or fridge/kitchen photos that contain unnecessary sensitive information. If possible, crop or hide information not needed for purchase verification or food-item recognition.</div>
 
         <h3>1.5 AI interaction data</h3>
-        <p>Friddy uses Anthropic's Claude API for recipe analysis, expiry prediction, price analysis, and spending insights based on your purchase history and current market prices, and Google's Gemini API for receipt and fridge/kitchen photo analysis. Both providers contractually agree not to use data submitted through their APIs to train their models. Data sent to these providers is processed only to generate the specific output requested by the user and is not retained by the providers beyond their stated retention periods.</p>
+        <p>Friddy uses Anthropic's Claude API for recipe analysis, expiry prediction, price analysis, and spending insights based on your purchase history and current market prices, and Google's Gemini API for receipt and fridge/kitchen photo analysis and for extracting food items from voice-input transcripts. Both providers contractually agree not to use data submitted through their APIs to train their models. Data sent to these providers is processed only to generate the specific output requested by the user and is not retained by the providers beyond their stated retention periods.</p>
         <p>Depending on the AI feature, we may process:</p>
         <ul>
           <li>Your inventory data</li>
@@ -181,6 +181,7 @@
           <li>Shopping list data</li>
           <li>Receipt-related data</li>
           <li>Fridge/kitchen photo data</li>
+          <li>Voice-input transcripts (converted text)</li>
           <li>Budget preferences</li>
           <li>User prompts or feedback given to AI features</li>
           <li>AI-generated recommendations and outputs</li>
@@ -208,6 +209,24 @@
           <li>Approximate session activity</li>
         </ul>
         <p>This information helps us maintain app stability, detect abuse, improve user experience, and secure the Service. Device integrity signals (Google Play Integrity / Apple DeviceCheck) may be processed to prevent abuse.</p>
+
+        <h3>1.8 Voice input data</h3>
+        <p>If you use the feature that adds items to your shopping list by voice, we collect and process:</p>
+        <ul>
+          <li>The converted text (transcript) of what you say in order to add items to your shopping list</li>
+          <li>The food items extracted from that text (name, quantity, unit, and category)</li>
+        </ul>
+        <div class="note">We do not collect voice (audio) data. Friddy receives only the converted text.</div>
+        <p>The process works as follows:</p>
+        <ol>
+          <li>You tap the microphone button in the app and say what you need to buy.</li>
+          <li>Your device's operating system converts the speech to text using its own speech recognition (iOS: Apple Speech Recognition (SFSpeechRecognizer); Android: Google Speech Recognition (SpeechRecognizer)). If your device does not have an offline recognition model for that language, the operating system may send the voice data to Apple's or Google's servers to perform the conversion. This is behavior of the device's operating system and is not controlled by Friddy.</li>
+          <li>Only the converted text (transcript) is sent to Friddy's server (Google Cloud Functions, us-central1, United States). The voice (audio) data itself is not sent to Friddy's server, and Friddy does not collect or store it.</li>
+          <li>Friddy's server passes the transcript to Google Gemini (United States) to extract food items (name, quantity, unit, and category).</li>
+          <li>The extracted results are shown in the app, and only the items you review and select are saved to your shopping list (covered by the grocery, shopping, and budget data described in Section 1.3).</li>
+        </ol>
+        <p>The transcript is used solely to extract items; it is not stored in our database and is discarded as soon as processing completes. Our server operation logs do not record the content of the transcript — only a user identifier, the character count, and the language code. However, if item extraction fails, part of the AI response (up to 500 characters) may remain in the operation logs for troubleshooting, and this may include recognized food names.</p>
+        <p>Each recording is limited to a maximum of 3 minutes, and each transcript to a maximum of 1,500 characters.</p>
 
         <h2 id="use">2. How we use your information</h2>
         <p>We use the information we collect for the following purposes.</p>
@@ -243,8 +262,10 @@
             <tbody>
               <tr><td>Google Firebase</td><td>Authentication, database, cloud functions, storage, usage analytics (Google Analytics for Firebase), and crash reporting (Firebase Crashlytics)</td></tr>
               <tr><td>Anthropic</td><td>Recipe AI analysis, expiry prediction, price analysis</td></tr>
-              <tr><td>Google Gemini</td><td>Receipt and fridge/kitchen photo analysis</td></tr>
+              <tr><td>Google Gemini</td><td>Receipt and fridge/kitchen photo analysis, and extraction of food items from voice-input transcripts</td></tr>
               <tr><td>Google (YouTube Data API)</td><td>Retrieving public video title and description for recipe analysis</td></tr>
+              <tr><td>Apple Inc. (United States)</td><td>iOS speech recognition (voice data may be transmitted only when on-device processing is not possible)</td></tr>
+              <tr><td>Google LLC (United States)</td><td>Android speech recognition (voice data may be transmitted only when on-device processing is not possible)</td></tr>
               <tr><td>Apple App Store &amp; Google Play</td><td>Payment processing (Friddy does not collect card details; we only receive a signed receipt confirming the purchase)</td></tr>
               <tr><td>Coupang Partners</td><td>Product search, recommendations, and affiliate purchase links on the shopping screen</td></tr>
             </tbody>
@@ -252,7 +273,7 @@
         </div>
 
         <h3>3.2 With AI providers</h3>
-        <p>When you use AI-powered features, relevant data may be sent to third-party AI providers to generate outputs. We send only the data needed for the feature. For example, the receipt-review feature may send receipt text or image information to Google Gemini to identify purchased items. The fridge/kitchen scan feature uploads your photo to Firebase Storage and sends it to Google Gemini to identify the food items in the image (name, quantity, and category); you review the detected items before they are added to your inventory. The recipe analyzer feature may send a recipe URL and your inventory data to Anthropic Claude to generate meal suggestions. When you paste a YouTube cooking video link, Friddy uses the YouTube Data API to retrieve the video's public title and description, which are then sent to Anthropic Claude to extract ingredients and cooking steps. Friddy does not download, store, or process the video content itself. On the shopping screen, when you search for an item, Friddy uses the Coupang Partners API to show matching product search results and recommendations, including current prices and affiliate purchase links. Only the item name you search is sent as a search query; no personal data is shared with Coupang through this search. Friddy participates in the Coupang Partners program and may earn a commission from qualifying purchases made through these links.</p>
+        <p>When you use AI-powered features, relevant data may be sent to third-party AI providers to generate outputs. We send only the data needed for the feature. For example, the receipt-review feature may send receipt text or image information to Google Gemini to identify purchased items. The fridge/kitchen scan feature uploads your photo to Firebase Storage and sends it to Google Gemini to identify the food items in the image (name, quantity, and category); you review the detected items before they are added to your inventory. When you add shopping-list items by voice, only the transcript converted on your device is sent to Friddy's server and then to Google Gemini to extract food items; the voice (audio) data itself is never sent to Friddy's server (see Section 1.8). The recipe analyzer feature may send a recipe URL and your inventory data to Anthropic Claude to generate meal suggestions. When you paste a YouTube cooking video link, Friddy uses the YouTube Data API to retrieve the video's public title and description, which are then sent to Anthropic Claude to extract ingredients and cooking steps. Friddy does not download, store, or process the video content itself. On the shopping screen, when you search for an item, Friddy uses the Coupang Partners API to show matching product search results and recommendations, including current prices and affiliate purchase links. Only the item name you search is sent as a search query; no personal data is shared with Coupang through this search. Friddy participates in the Coupang Partners program and may earn a commission from qualifying purchases made through these links.</p>
 
         <h3>3.3 With affiliate or grocery partners</h3>
         <p>Friddy displays product search results, prices, and purchase links from grocery partners such as Coupang on the shopping screen, retrieved via the Coupang Partners API. Friddy may also include affiliate links on the Everything Essential website and blog. If you click a purchase link in the app or on our website:</p>
@@ -278,8 +299,10 @@
             <tbody>
               <tr><td>Google (Firebase)</td><td>United States</td><td>All user data</td><td>Network transmission during service use</td></tr>
               <tr><td>Anthropic</td><td>United States</td><td>Recipe analysis data, inventory data, price history</td><td>API call network transmission</td></tr>
-              <tr><td>Google (Gemini)</td><td>United States</td><td>Receipt analysis data</td><td>API call network transmission</td></tr>
+              <tr><td>Google (Gemini)</td><td>United States</td><td>Receipt and fridge/kitchen photo analysis data, voice-input transcripts</td><td>API call network transmission</td></tr>
               <tr><td>Google (YouTube Data API)</td><td>United States</td><td>YouTube video URL (to retrieve public title/description)</td><td>API call network transmission</td></tr>
+              <tr><td>Apple Inc.</td><td>United States</td><td>Voice data (only when on-device speech recognition is not possible on iOS)</td><td>Network transmission by the device operating system's speech recognition</td></tr>
+              <tr><td>Google LLC</td><td>United States</td><td>Voice data (only when on-device speech recognition is not possible on Android)</td><td>Network transmission by the device operating system's speech recognition</td></tr>
               <tr><td>Coupang</td><td>South Korea</td><td>Item name search queries (for price lookup)</td><td>API call network transmission</td></tr>
             </tbody>
           </table>
@@ -297,6 +320,8 @@
               <tr><td>Inventory and shopping data</td><td>Until account deletion</td></tr>
               <tr><td>Receipt and fridge/kitchen photos</td><td>Until account deletion</td></tr>
               <tr><td>Receipt extracted text</td><td>Until account deletion</td></tr>
+              <tr><td>Voice transcripts (converted text)</td><td>Discarded immediately after processing (not stored)</td></tr>
+              <tr><td>Voice (audio) data</td><td>Not collected</td></tr>
               <tr><td>Payment records</td><td>5 years (Korean E-Commerce Act)</td></tr>
               <tr><td>Login records</td><td>3 months (Korean Communications Privacy Protection Act)</td></tr>
               <tr><td>Fraud / abuse records</td><td>1 year</td></tr>
@@ -331,8 +356,11 @@
           <li><strong>Camera or Photo Library</strong> — used for receipt scanning, fridge/kitchen photo scanning, food-item images, or profile-related uploads.</li>
           <li><strong>Notifications</strong> — used for expiration reminders, grocery reminders, reorder alerts, and account notices.</li>
           <li><strong>Location</strong> — used for region-based store recommendations, price comparison, or localized grocery features.</li>
+          <li><strong>Microphone</strong> — used when you add items to your shopping list by voice. (Optional)</li>
+          <li><strong>Speech Recognition (iOS)</strong> — used to convert what you say into text. (Optional)</li>
         </ul>
         <p>You can manage permissions through your device settings. Some features may not work properly if permissions are disabled.</p>
+        <p>The Microphone and Speech Recognition permissions are both optional. If you choose not to grant them, you can still use every feature of the app by entering items manually.</p>
 
         <h2 id="children">8. Children's privacy</h2>
         <p>Friddy is not intended for children under the age required by applicable law to consent to data processing (14 years in Korea). We do not knowingly collect personal information from children without appropriate consent. If you believe a child has provided personal information to Friddy without appropriate consent, please contact us at <a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a> so we can take appropriate action.</p>
@@ -363,6 +391,7 @@
         <h2 id="changes">14. Changes to this Privacy Policy</h2>
         <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify users through the app, email, website, or another appropriate method. The "Effective Date" at the top of this document indicates when the policy was last updated.</p>
         <ul>
+          <li>August 9, 2026 — Added voice input for shopping lists: microphone and speech-recognition permissions, the voice input data category, and Apple/Google speech recognition as processors.</li>
           <li>July 20, 2026 — Named usage-analytics and crash-reporting tools (Firebase Analytics/Crashlytics), added Google Play payments, and clarified AI price-analysis.</li>
           <li>July 10, 2026 — Added fridge/kitchen photo scanning (analyzed via Google Gemini) to automatically recognize food items for your inventory; clarified that the Coupang Partners integration covers product search and recommendations shown on the shopping screen and added the required commission disclosure; changed the retention period for receipt and fridge/kitchen photos to "until account deletion."</li>
           <li>June 27, 2026 — Added anonymous (guest) accounts and the guest-to-registered account upgrade flow.</li>
