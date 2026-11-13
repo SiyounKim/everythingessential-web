@@ -14,6 +14,7 @@ ROUTES = {
     "/Privacy": "screens/legal/privacy.html",
     "/Privacy-ko": "screens/legal/privacy-ko.html",
     "/Terms": "screens/legal/terms.html",
+    "/Terms-ko": "screens/legal/terms-ko.html",
     "/blog-business-cards": "screens/blog/posts/business-cards.html",
     "/blog-calm-by-default": "screens/blog/posts/calm-by-default.html",
     "/blog-essential-thesis": "screens/blog/posts/essential-thesis.html",

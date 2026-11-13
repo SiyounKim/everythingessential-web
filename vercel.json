@@ -19,6 +19,7 @@
     { "source": "/Privacy", "destination": "/screens/legal/privacy" },
     { "source": "/Privacy-ko", "destination": "/screens/legal/privacy-ko" },
     { "source": "/Terms", "destination": "/screens/legal/terms" },
+    { "source": "/Terms-ko", "destination": "/screens/legal/terms-ko" },
     { "source": "/blog-business-cards", "destination": "/screens/blog/posts/business-cards" },
     { "source": "/blog-calm-by-default", "destination": "/screens/blog/posts/calm-by-default" },
     { "source": "/blog-essential-thesis", "destination": "/screens/blog/posts/essential-thesis" },
