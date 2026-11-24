@@ -90,7 +90,7 @@
       <a href="/Privacy-ko">한국어</a>
     </div>
     <div class="meta">
-      <span>EFFECTIVE · NOVEMBER 18, 2026</span>
+      <span>EFFECTIVE · NOVEMBER 25, 2026</span>
       <span class="dot"></span>
       <span>OPERATOR · EVERYTHING ESSENTIAL</span>
       <span class="dot"></span>
@@ -128,7 +128,32 @@
 
       <div class="prose">
         <div class="note">
-          <p><strong>Changes to this Privacy Policy</strong><br>The revised Privacy Policy takes effect on November 18, 2026. (Posted on November 15, 2026.)</p>
+          <p><strong>Changes to this Privacy Policy</strong><br>The revised Privacy Policy takes effect on November 25, 2026. (Posted on November 24, 2026.)</p>
+          <p style="margin-bottom: 8px;"><strong>What's changing</strong></p>
+          <ol>
+            <li>Recipe statistics: we added a new use of the recipes members save — counting how many people have saved each recipe, to show popular recipes and "Saved by N". Only a number per recipe is kept, never who saved it.</li>
+            <li>Invite rewards: when a new member enters a friend code, both members get coins; we keep the code owner's account identifier until their coins are paid (at most 14 days).</li>
+            <li>Home Screen and Lock Screen widget: we added what the widget shows and that this information is stored only on your device.</li>
+            <li>Friddy Room: we added the room names you choose and what we store to work out each friend's growth stage.</li>
+            <li>AI advice record: we added the record we keep so the AI advice on Insights is made once a day and shown all that day, and how long we keep it.</li>
+          </ol>
+          <p style="margin-bottom: 8px;"><strong>Before and after</strong></p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Topic</th><th>Before</th><th>After</th></tr></thead>
+              <tbody>
+                <tr><td>How we use information</td><td>Friddy Room, ads, Friends' rooms, recipes you save from a link, Flyer Deals</td><td>Recipe statistics, invite rewards and the Home Screen and Lock Screen widget added</td></tr>
+                <tr><td>Information we collect</td><td>Friddy Room data (coins, missions, visit record, decorations, saved recipes)</td><td>Room names, what each friend's growth stage is counted from (your visit count when it arrived), invite rewards, what the widget shows (on your device only), and the AI advice record added</td></tr>
+                <tr><td>Retention</td><td>Friddy Room data, recipes you save from a link, Friends' rooms and more</td><td>Recipe statistics, pending invite rewards (at most 14 days), what the widget shows, and the AI advice record added</td></tr>
+                <tr><td>Processors and transfers</td><td>Google (Firebase) stores Friddy Room data, recipes you save from a link and Friends' rooms</td><td>Recipe statistics and the AI advice record added to what it stores; the spending and waste summary for AI insights named in the Anthropic transfer (no new processors or recipients)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-bottom: 0;"><a href="#previous">See the Privacy Policy in effect November 18 to November 24, 2026 →</a></p>
+        </div>
+
+        <div class="note">
+          <p><strong>Earlier changes</strong><br>The changes that took effect on November 18, 2026. (Posted on November 15, 2026.)</p>
           <p style="margin-bottom: 8px;"><strong>What's changing</strong></p>
           <ol>
             <li>We are introducing optional rewarded ads (Google AdMob). We added how Google LLC collects information such as the advertising ID through its SDK in the app, what it collects, why, how to opt out, and the transfer of that information outside Korea.</li>
@@ -154,13 +179,460 @@
               </tbody>
             </table>
           </div>
-          <p style="margin-bottom: 0;"><a href="#previous">See the previous Privacy Policy →</a></p>
+          <p style="margin-bottom: 0;"><a href="#previous-2026-08-09">See the Privacy Policy in effect August 9 to November 17, 2026 →</a></p>
         </div>
 
         <p>Friddy is an AI-powered kitchen, grocery, and food-planning application operated by Everything Essential. Friddy helps users manage kitchen inventory, track expiration dates, generate recipe and shopping recommendations, compare grocery options, analyze receipts, and improve grocery spending decisions.</p>
         <p>By accessing or using Friddy, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
 
         <h2 id="collect">1. Information we collect</h2>
+        <p>We collect information to provide, maintain, personalize, secure, and improve Friddy.</p>
+
+                <h3>1.1 Account information</h3>
+        <p>When you create or use a Friddy account, we may collect:</p>
+        <ul>
+          <li>Name or display name</li>
+          <li>Email address</li>
+          <li>Phone number, if provided</li>
+          <li>Login and authentication information</li>
+          <li>Profile preferences, such as language, household size, budget range, dietary preferences, allergy information, and grocery preferences</li>
+          <li>Subscription or premium status</li>
+        </ul>
+        <p><strong>Guest (anonymous) accounts.</strong> When you first open Friddy, the app signs you in automatically with an anonymous guest account so you can use Friddy without registering or providing any personal details. A guest account is identified only by a random account ID issued by Firebase Authentication; for a guest account we do not collect your name, email, or phone number. Data you create as a guest — such as kitchen inventory, shopping lists, and preferences — is stored under that anonymous ID.</p>
+        <p><strong>Upgrading a guest account.</strong> You can later create a permanent account by adding an email address and password. Your existing guest account is then upgraded in place: the same account ID is kept, so the data you created as a guest carries over to your registered account. From that point we collect and store your email address (and display name, if provided). If you instead sign in to a different existing account, the data under your guest account is not transferred and remains associated only with the anonymous ID. You can delete a guest or registered account at any time in the app (Profile → Settings → Account), which removes the associated data on the same schedule described in "Data retention".</p>
+
+                <h3>1.2 Kitchen and inventory data</h3>
+        <p>To provide Friddy's inventory and food-planning features, we may collect information you enter or generate in the app, including:</p>
+        <ul>
+          <li>Food items in your kitchen inventory</li>
+          <li>Quantity, unit, category, and storage location</li>
+          <li>Expiration dates or estimated shelf life</li>
+          <li>Food status, such as fresh, expiring soon, expired, or consumed</li>
+          <li>Reorder preferences</li>
+          <li>Notes, tags, or custom item details</li>
+        </ul>
+
+        <h3>1.3 Grocery, shopping, and budget data</h3>
+        <p>To support grocery planning, price comparison, and smart basket optimization, we may collect:</p>
+        <ul>
+          <li>Shopping list items</li>
+          <li>Grocery budget preferences</li>
+          <li>Preferred grocery stores or platforms</li>
+          <li>Purchase history entered or confirmed by you</li>
+          <li>Estimated prices, selected offers, and basket recommendations</li>
+          <li>Store ratings or feedback submitted by you</li>
+          <li>Aggregated price history per item (your past purchase prices), used to detect savings opportunities</li>
+          <li>Savings records (such as avoided duplicate purchases or purchases below your average price) displayed in the savings dashboard</li>
+          <li>The stores and deals you apply to your shopping list in Flyer Deals (Canada and the US): store name, sale and regular price, valid-until date, distance, and the price and store before the deal (so you can revert it)</li>
+        </ul>
+
+                <h3>1.4 Receipt and fridge/kitchen photo data</h3>
+        <p>If you use receipt scanning, fridge/kitchen photo scanning, or purchase verification features, we may collect:</p>
+        <ul>
+          <li>Photos or images of receipts that you upload</li>
+          <li>Photos of your refrigerator, pantry, or kitchen that you upload so Friddy can identify food items (these photos may incidentally capture other items visible in the frame)</li>
+          <li>Receipt text extracted from the image</li>
+          <li>Food item names, estimated quantity, and category detected from fridge/kitchen photos</li>
+          <li>Purchased item names, quantities, prices, store names, purchase dates, and totals</li>
+          <li>Matching results between your receipt and shopping list</li>
+          <li>Information needed to update your inventory after a purchase or a fridge/kitchen scan</li>
+        </ul>
+        <div class="note">You should avoid uploading receipts or fridge/kitchen photos that contain unnecessary sensitive information. If possible, crop or hide information not needed for purchase verification or food-item recognition.</div>
+
+        <h3>1.5 AI interaction data</h3>
+        <p>Friddy uses Anthropic's Claude API for recipe link analysis, expiry prediction, price insights, and AI insights, and Google's Gemini API for receipt and fridge/kitchen photo analysis, for extracting food items from voice-input transcripts, and for Flyer Deals' lowest-price search. Both providers contractually agree not to use data submitted through their APIs to train their models. Data sent to these providers is processed only to generate the specific output requested by the user and is not retained by the providers beyond their stated retention periods.</p>
+        <p>Depending on the AI feature, we may process:</p>
+        <ul>
+          <li>Your inventory data</li>
+          <li>Dietary preferences and allergy settings</li>
+          <li>Shopping list data</li>
+          <li>Receipt-related data</li>
+          <li>Fridge/kitchen photo data</li>
+          <li>Voice-input transcripts (converted text)</li>
+          <li>Budget preferences</li>
+          <li>Recipe links you paste and the public content of those web pages</li>
+          <li>Shopping list item names and your area (city name and coordinates) for Flyer Deals' search</li>
+          <li>User prompts or feedback given to AI features</li>
+          <li>AI-generated recommendations and outputs</li>
+        </ul>
+        <p>When you search for the lowest prices in Flyer Deals (Canada and the US), the names of the items on your shopping list (up to 30) and the area you set (city name and coordinates) are sent to Friddy's server (Google Cloud Functions, us-central1, United States), which sends them to Google Gemini (with Google Search) to find this week's prices at nearby stores. The results (stores, prices, and the item names searched) are kept on our servers by area (about 5 km cells) without your account ID, reused for searches in the same area for 24 hours, and replaced by the next search.</p>
+        <p>The AI advice on Insights is made once a day and stays the same that day; you can ask for new advice once a day with "Refresh analysis". For this we keep, for each account, on our servers: that day's advice (the headline and recommendations), when it was made, the language and currency, the summary of spending and waste it was made from (totals, counts by category, and the names and counts of items often thrown away), and the day you last used "Refresh analysis"; and the app keeps a copy of the advice on your device. New advice made on another day replaces it; the copy on your device is deleted when you sign out, and the record on our servers is deleted when you delete your account.</p>
+
+        <h3>1.6 Location data</h3>
+        <p>Friddy uses the area you set to compare nearby stores' flyers and prices, recommend groceries, show regional prices, and offer market-specific features. We collect:</p>
+        <ul>
+          <li>The country you live in, and your city or neighborhood name</li>
+          <li>Your area's coordinates (latitude and longitude): when you choose an area from the list or by search, its representative coordinates; when you tap "Use current location", the location your device gives at that moment (accurate to about 100 m), saved to your profile</li>
+          <li>Store availability near your selected area</li>
+        </ul>
+        <p>Friddy asks for location permission only when you tap "Use current location", and reads your location once at that moment. Friddy does not track your location continuously or in the background. You can change your area in your Profile at any time.</p>
+
+        <h3>1.7 Usage, device, and technical data</h3>
+        <p>We may automatically collect technical and usage information, including:</p>
+        <ul>
+          <li>Device type and operating system</li>
+          <li>App version</li>
+          <li>IP address</li>
+          <li>Crash logs and diagnostic data</li>
+          <li>Feature usage events</li>
+          <li>Performance data</li>
+          <li>Authentication and security logs</li>
+          <li>Approximate session activity</li>
+        </ul>
+        <p>This information helps us maintain app stability, detect abuse, improve user experience, and secure the Service. Device integrity signals (Google Play Integrity / Apple App Attest) may be processed to prevent abuse.</p>
+        <p><strong>Advertising ID (Android)</strong></p>
+        <ul>
+          <li>Google Firebase Analytics: usage statistics</li>
+          <li>Google AdMob: serving and measuring ads, preventing invalid ad traffic, and personalized ads (see Section 5, "Advertising (Google AdMob) and your choices")</li>
+          <li>On iOS, Friddy does not ask for permission to track you (App Tracking Transparency), so the iOS advertising identifier (IDFA) is not collected.</li>
+          <li>You can delete your advertising ID (so it is not used for personalized ads) or reset it (which gives you a new one) in your device settings (Android: Settings &gt; Privacy &gt; Ads, or Settings &gt; Google &gt; Ads on some devices).</li>
+        </ul>
+
+                <h3>1.8 Voice input data</h3>
+        <p>If you use the feature that adds items to your shopping list by voice, we collect and process:</p>
+        <ul>
+          <li>The converted text (transcript) of what you say in order to add items to your shopping list</li>
+          <li>The food items extracted from that text (name, quantity, unit, and category)</li>
+        </ul>
+        <div class="note">We do not collect voice (audio) data. Friddy receives only the converted text.</div>
+        <p>The process works as follows:</p>
+        <ol>
+          <li>You tap the microphone button in the app and say what you need to buy.</li>
+          <li>Your device's operating system converts the speech to text using its own speech recognition (iOS: Apple Speech Recognition (SFSpeechRecognizer); Android: Google Speech Recognition (SpeechRecognizer)). If your device does not have an offline recognition model for that language, the operating system may send the voice data to Apple's or Google's servers to perform the conversion. This is behavior of the device's operating system and is not controlled by Friddy.</li>
+          <li>Only the converted text (transcript) is sent to Friddy's server (Google Cloud Functions). App versions 4.2.1 and later use the Seoul, South Korea (asia-northeast3) region; version 4.2.0 uses the United States (us-central1) region. The voice (audio) data itself is not sent to Friddy's server, and Friddy does not collect or store it.</li>
+          <li>Friddy's server passes the transcript to Google Gemini (United States) to extract food items (name, quantity, unit, and category).</li>
+          <li>The extracted results are shown in the app, and only the items you review and select are saved to your shopping list (covered by the grocery, shopping, and budget data described in Section 1.3).</li>
+        </ol>
+        <p>The transcript is used solely to extract items; it is not stored in our database and is discarded as soon as processing completes. Our server operation logs do not record the content of the transcript — only a user identifier, the character count, and the language code. However, if item extraction fails, part of the AI response (up to 500 characters) may remain in the operation logs for troubleshooting, and this may include recognized food names.</p>
+        <p>Each recording is limited to a maximum of 3 minutes, and each transcript to a maximum of 1,500 characters.</p>
+
+        <h3>1.9 Friddy Room data</h3>
+        <ul>
+          <li>Coin balance (bought and earned coins kept apart) and coin history (source, amount, balance, date and time, and the mission, item or coin pack involved)</li>
+          <li>Today's missions completed and rewards claimed, whether the all-clear bonus was paid, and today's ad rewards (up to 3 a day)</li>
+          <li>The IDs of recipes and the fingerprints of receipts already rewarded (a receipt's fingerprint is a one-way value made from the store, total and items), so the same recipe or receipt is not rewarded twice</li>
+          <li>Visit record: last visit date, current, longest and total days visited (recorded by date)</li>
+          <li>The friends, items, room themes, decor and rooms you own, what you use in each room and which room home shows, and the friend you picked first</li>
+          <li>Room names (if you name a room; up to 10 characters each, never shown to friends)</li>
+          <li>Your total visit count at the time each friend arrived, to work out each friend's growth stage</li>
+          <li>The last day you opened the app, and whether you came back that day after days away (used only to choose the friend's face)</li>
+          <li>Saved recipes (up to 200 recipe IDs; for the content of recipes saved from a link, see Section 1.10)</li>
+          <li>Invite rewards: whether you got an invite reward, how many invite rewards you got, and, until the code owner's coins are paid (at most 14 days), the code owner's account identifier</li>
+          <li>When the room was last saved (for syncing between devices)</li>
+        </ul>
+        <div class="note">Apart from the room names you choose, this contains nothing you write yourself; it is created automatically as you use the app. It is created the first time you open the app, for every account including guest accounts, and each day you open the app is recorded.</div>
+        <p><strong>Recipe statistics.</strong> Your saved recipe list is also used for recipe statistics. Recipes saved from the app's recipe list are counted only as a number per recipe — how many people have it saved now, and how many saved it each week — and we never keep who saved it. We show the count only for recipes saved by three or more people. Recipes saved from a link are not counted. Unsaving a recipe or deleting your account takes that save out of the count. The counts cannot identify anyone, and we keep them while we run the service.</p>
+        <p><strong>Invite rewards.</strong> When a member who joined less than 7 days ago enters another member's friend code for the first time, both get coins. The code owner's coins are paid when the new member opens the app again on another day; until then (at most 14 days) we keep the code owner's account identifier in the new member's coin wallet record, and delete it once paid or when the time runs out. Whether you got an invite reward, and how many, is kept with your coin history.</p>
+
+        <h3>1.10 Recipes you save from a link (only if you save one)</h3>
+        <ul>
+          <li>For each recipe that Recipe finder analyzed from a link and that you chose to save: the link, title, servings, ingredients (name, amount and unit), steps, and when you saved it</li>
+        </ul>
+        <p>We store the link you entered; if it has extra information after "?", such as search terms or a share code, that is stored too. A desktop Naver Blog link is stored as the mobile link to the same post that the analysis uses instead. Links you analyze but do not save are not stored.</p>
+        <p>We do not store whether you have each ingredient; the app compares the recipe with your current inventory each time you open it. We do not use this information for advertising or include it in ad requests, and we do not give it to anyone other than Google LLC (Firebase), which stores it for us.</p>
+
+        <h3>1.11 Coin purchases (only if you buy coins)</h3>
+        <ul>
+          <li>The store (App Store or Google Play), the product, the number of coins, the store's transaction number, whether it was a real or test purchase, whether and when the coins were paid or refunded, and your account identifier</li>
+        </ul>
+        <p>Payment is handled by the store; we do not receive your card number or other payment details. When you buy, the app sends the store a one-way value made from your account identifier, so the coins go only to the account that bought them.</p>
+
+        <h3>1.12 Friends' rooms (only if you use them)</h3>
+        <ul>
+          <li>What your friends see: the room on your home (your friend's kind, what it wears, the room theme and decor), your friend's growth stage, the name you show friends (your profile name unless you change it), the hearts your room received, and your friend code</li>
+          <li>Your friend list (your friends' account identifiers, up to 50), the account identifiers of people you blocked, and the last day you gave each friend a heart</li>
+          <li>Reports (if you report a friend): the account identifiers of the person reporting and the person reported, the reason chosen (inappropriate name, harassment or unkind behavior, or something else), the name the reported person showed at the time, whether they were blocked, when, and what we did about it. For a reported name, that name and who reported it, and any name we hid and when</li>
+        </ul>
+        <p>This is created the first time you open Friends' rooms. Of this, only what your friends see is shown, and only to people you became friends with by a friend code; your fridge, inventory, shopping, diet, allergies and coins are never shown. Removing a friend removes you from each other's lists and deletes the heart dates; deleting your account deletes all of it except reports and removes you from your friends' lists.</p>
+        <p>Our server sets the name your friends see and refuses names with profanity, slurs, hate or sexual terms, or that pose as our staff. When you report a friend, we review it and act, for example by hiding their name or removing them from Friends' rooms; they are not told who reported them. A name reported by three different friends is hidden right away. Blocking someone removes them as a friend, and they can't add you again with your friend code.</p>
+        <div class="note">Information that Google LLC collects directly through its SDK in the app for advertising is described in Section 5, "Advertising (Google AdMob) and your choices". We do not receive or keep the information Google collects; we keep only the coins paid for ads you watched and today's ad-reward count, as part of the Friddy Room data above.</div>
+
+        <h3>1.13 What the Home Screen and Lock Screen widget shows (on your device only)</h3>
+        <ul>
+          <li>Your friend's look (kind, growth stage, what it wears and its face), the name of its kind, and its line</li>
+          <li>The names and dates of up to three items expiring soon, and how many there are</li>
+          <li>Today's mission progress, your total visit count, and the name of a suggested recipe</li>
+          <li>The names (up to four) and number of items on your shopping list not yet in your cart</li>
+          <li>The widget's words (in the app's language) and the day they were saved</li>
+        </ul>
+        <p>So that the "Friddy Friend" widget can show this, the app stores it while you use the app, in storage on your device shared only between the app and its widget (an iOS App Group, or the app's storage on Android). This information never leaves your device and is not stored on our servers. A widget can be seen by others where it is shown, such as on the Home Screen or the Lock Screen (iOS); remove it if you prefer. Signing out or deleting your account clears the widget, and deleting the app removes it.</p>
+
+        <h2 id="use">2. How we use your information</h2>
+        <p>We use the information we collect for the following purposes.</p>
+
+                <h3>2.1 To provide core app features</h3>
+        <p>We use your data to create and manage your account, store and display your kitchen inventory, track expiration dates, generate recipe suggestions, build shopping lists, recommend grocery purchases, analyze receipts and fridge/kitchen photos to automatically recognize food items and help populate your inventory, update your inventory after confirmed purchases, and provide spending and waste insights.</p>
+
+        <h3>2.2 To personalize recommendations</h3>
+        <p>We may use your information to personalize recipe recommendations, expiring-food alerts, shopping suggestions, budget-aware grocery plans, store or product recommendations, smart basket optimization results, and reorder reminders.</p>
+
+        <h3>2.3 To provide AI-powered features</h3>
+        <p>We may use your data to generate AI-assisted outputs, including meal ideas based on inventory, estimated expiration dates and shelf-life predictions, grocery optimization suggestions, price insights based on your own purchase history and current market prices, receipt review results, automatic food-item recognition from fridge/kitchen photos, budget-saving recommendations, recipe extraction from recipe and cooking video links you provide, food waste reduction insights, savings tracking showing how much Friddy helped you save, personalized shopping plans, and this week's lowest prices at nearby stores in Flyer Deals (Canada and the US).</p>
+        <div class="note">AI-generated results may be inaccurate or incomplete. You should review recommendations before relying on them, especially for allergies, dietary restrictions, prices, or purchase decisions.</div>
+
+        <h3>2.4 To process paid features and coin purchases</h3>
+        <p>If Friddy sells paid features or coins, we use account, subscription status and purchase records to confirm payments, enable paid features, pay the coins you bought, prevent unauthorized access, and manage billing-related access through the app stores. Friddy does not collect your card number or other payment details; payments are handled by the App Store or Google Play.</p>
+
+                <h3>2.5 To improve and secure the Service</h3>
+        <p>We may use information to debug errors and crashes, improve app performance, prevent fraud, abuse, or unauthorized access, enforce our terms and policies, monitor system reliability, and test and improve product features.</p>
+
+        <h3>2.6 To communicate with you</h3>
+        <p>We may use your contact information to send account-related notices, security alerts, service updates, customer support responses, important policy updates, and optional product or feature announcements, where permitted.</p>
+
+        <h3>2.7 To provide the Friddy Room, ads, and Friends' rooms</h3>
+        <ul>
+          <li>Providing the Friddy Room: earning and spending coins, paying mission and visit rewards, decorating your friend and room, naming rooms, working out each friend's growth stage, saving recipes, applying daily reward limits, and restoring your room after a reinstall or on a new phone</li>
+          <li>Recipe statistics: counting how many people have saved each recipe, from members' saved recipe lists, to show "Popular on Friddy this week" and "Saved by N" on recipes</li>
+          <li>Invite rewards: paying coins to a new member who enters a friend code and to the code owner, and paying each invite only once</li>
+          <li>Providing the Home Screen and Lock Screen widget: showing your friend and its line, food expiring soon, today's missions, a suggested recipe and your shopping list on the widget</li>
+          <li>Providing rewarded ads: giving you coins for ads you choose to watch (10 coins per ad, up to 3 a day)</li>
+          <li>Selling coins: confirming payments and paying the coins, making sure a payment is paid once and only to the account that made it, taking coins back when a payment is refunded, and answering questions about purchases</li>
+          <li>Keeping recipes you save from a link: showing them again in Saved recipes, comparing them with your current inventory to show what is missing, and adding missing ingredients to your shopping list</li>
+          <li>Providing Friends' rooms: issuing friend codes, adding and removing friends, showing your room to your friends, and giving a heart once a day</li>
+          <li>Keeping Friends' rooms safe: filtering inappropriate names, receiving, reviewing and acting on reports, and keeping people you blocked from adding you again</li>
+          <li>Providing Flyer Deals: finding this week's prices at stores near the area you set and comparing them with your shopping list</li>
+        </ul>
+
+        <h2 id="share">3. How we share information</h2>
+        <p>We may share information only in the situations described below. However, Google LLC collects information such as the advertising ID directly through Google's ads SDK in the app, as described in Section 5, "Advertising (Google AdMob) and your choices". We do not include your name, email address, account ID, inventory, shopping, diet or allergy information, or saved recipes in ad requests.</p>
+
+        <h3>3.1 With service providers</h3>
+        <p>We may share information with trusted vendors that help us operate Friddy. The current list of processors is:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Processor</th><th>Purpose</th></tr></thead>
+            <tbody>
+              <tr><td>Google Firebase (Google LLC)</td><td>Authentication, data storage (Cloud Firestore, Cloud Storage), server functions (Cloud Functions), usage analytics (Google Analytics for Firebase), crash reporting (Firebase Crashlytics), and storing Friddy Room data, recipes you save from a link, Friends' rooms, recipe statistics and AI advice records</td></tr>
+              <tr><td>Anthropic</td><td>Recipe link analysis, expiry prediction, price insights, AI insights</td></tr>
+              <tr><td>Google Gemini</td><td>Receipt and fridge/kitchen photo analysis, extraction of food items from voice-input transcripts, and Flyer Deals' lowest-price search</td></tr>
+              <tr><td>Google (YouTube Data API)</td><td>Retrieving public video title and description for recipe analysis</td></tr>
+              <tr><td>Apple Inc. (United States)</td><td>iOS speech recognition (voice data may be transmitted only when on-device processing is not possible)</td></tr>
+              <tr><td>Google LLC (United States)</td><td>Android speech recognition (voice data may be transmitted only when on-device processing is not possible)</td></tr>
+              <tr><td>Apple App Store &amp; Google Play</td><td>Payment processing (Friddy does not collect card details; we only receive the store's payment information confirming the purchase)</td></tr>
+              <tr><td>Coupang Partners</td><td>Product search, recommendations, and affiliate purchase links on the shopping screen</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>3.2 With AI providers</h3>
+        <p>When you use AI-powered features, relevant data may be sent to third-party AI providers to generate outputs. We send only the data needed for the feature. For example, the receipt-review feature may send receipt text or image information to Google Gemini to identify purchased items. The fridge/kitchen scan feature uploads your photo to Firebase Storage and sends it to Google Gemini to identify the food items in the image (name, quantity, and category); you review the detected items before they are added to your inventory. When you add shopping-list items by voice, only the transcript converted on your device is sent to Friddy's server and then to Google Gemini to extract food items; the voice (audio) data itself is never sent to Friddy's server (see Section 1.8). When you paste a recipe web page or YouTube cooking video link, Friddy's server retrieves the page's public content (for a YouTube video, its public title and description through the YouTube Data API) and sends it to Anthropic Claude to extract ingredients and cooking steps. Friddy does not download, store, or process the video content itself, and keeps an analyzed recipe only if you tap "Save" (see Section 1.10). Flyer Deals sends your shopping list item names and your area to Google Gemini to find nearby prices (see Section 1.5). On the shopping screen, when you search for an item, Friddy uses the Coupang Partners API to show matching product search results and recommendations, including current prices and affiliate purchase links. Only the item name you search is sent as a search query; no personal data is shared with Coupang through this search. Friddy participates in the Coupang Partners program and may earn a commission from qualifying purchases made through these links.</p>
+
+                <h3>3.3 With affiliate or grocery partners</h3>
+        <p>Friddy displays product search results, prices, and purchase links from grocery partners such as Coupang on the shopping screen, retrieved via the Coupang Partners API. Friddy may also include affiliate links on the Everything Essential website and blog. If you click a purchase link in the app or on our website:</p>
+        <ul>
+          <li>The partner may collect information under its own privacy policy</li>
+          <li>Friddy may receive limited affiliate attribution information</li>
+          <li>Friddy may track whether a link was clicked for analytics or commission purposes</li>
+          <li>Friddy does not control the partner's privacy practices</li>
+        </ul>
+        <p>Unless clearly stated, Friddy does not automatically complete purchases on your behalf.</p>
+
+        <h3>3.4 For legal, safety, or compliance reasons</h3>
+        <p>We may disclose information if we believe it is necessary to comply with applicable law or legal process, respond to lawful requests from authorities, protect the rights, property, or safety of Everything Essential, users, or others, investigate fraud, security incidents, or misuse, or enforce our agreements or policies.</p>
+
+        <h3>3.5 Business transfers</h3>
+        <p>If Everything Essential is involved in a merger, acquisition, financing, restructuring, or sale of assets, user information may be transferred as part of that transaction. We will take reasonable steps to ensure continued protection of user information.</p>
+
+        <h2 id="transfers">4. International data transfers</h2>
+        <p>Friddy stores and processes information in countries where Everything Essential, its service providers, or infrastructure partners operate. The following international transfers occur:</p>
+        <div class="table-wrap">
+          <table class="wide-table">
+            <thead><tr><th>Recipient</th><th>Country</th><th>Data transferred</th><th>When and how</th><th>Why</th><th>How long</th></tr></thead>
+            <tbody>
+              <tr><td>Google (Firebase)</td><td>United States</td><td>Account authentication data, usage statistics and crash information, information our server functions need, and data stored in Cloud Firestore and Cloud Storage (including Friddy Room data, recipes you save from a link, Friends' rooms, recipe statistics and AI advice records)</td><td>Over the network whenever needed while you use the app</td><td>Authentication, data storage, server functions, usage statistics, crash reporting</td><td>Until you delete your account or the contract ends</td></tr>
+              <tr><td>Google LLC (advertising)</td><td>United States</td><td>The items in Section 5, "What Google may collect"</td><td>Over the network when you open the app or your Profile (ad consent check), when you open the Missions or Flyer Deals screen, and when you watch an ad</td><td>Serving and measuring ads, preventing invalid ad traffic, personalized ads, managing ad consent</td><td>Under Google's privacy policy; we do not receive or keep it</td></tr>
+              <tr><td>Anthropic</td><td>United States</td><td>Recipe links and their page content, inventory data, price history, and a summary of spending and waste for AI insights</td><td>API call network transmission</td><td>Recipe analysis, expiry prediction, price and AI insights</td><td>Until the provider's retention period after the request</td></tr>
+              <tr><td>Google (Gemini)</td><td>United States</td><td>Receipt and fridge/kitchen photo analysis data, voice-input transcripts, Flyer Deals' item names and area (city name and coordinates)</td><td>API call network transmission</td><td>Recognizing items in photos and speech, lowest-price search</td><td>Until the provider's retention period after the request</td></tr>
+              <tr><td>Google (YouTube Data API)</td><td>United States</td><td>YouTube video URL (to retrieve public title/description)</td><td>API call network transmission</td><td>Recipe analysis</td><td>Only while the request is processed</td></tr>
+              <tr><td>Apple Inc.</td><td>United States</td><td>Voice data (only when on-device speech recognition is not possible on iOS)</td><td>Network transmission by the device operating system's speech recognition</td><td>Speech recognition</td><td>Under Apple's policies</td></tr>
+              <tr><td>Google LLC</td><td>United States</td><td>Voice data (only when on-device speech recognition is not possible on Android)</td><td>Network transmission by the device operating system's speech recognition</td><td>Speech recognition</td><td>Under Google's policies</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Coupang, a Korean company, receives only the item names you search on the shopping screen, which is not a transfer outside Korea. These transfers are protected by contractual safeguards and the recipients' applicable security frameworks. Privacy contact for Google LLC: <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">support.google.com/policies/contact/general_privacy_form</a></p>
+        <p>How to refuse the transfer for advertising, and what happens if you do: see "Your choices" and "If you opt out" in Section 5. The consent check when the app starts cannot be turned off separately in the app; if you do not want it, you can stop using or delete the app.</p>
+
+        <h2 id="advertising">5. Advertising (Google AdMob) and your choices</h2>
+        <p>1. Friddy offers optional rewarded video ads. To show them we use Google AdMob and Google's consent tool (User Messaging Platform), provided by Google LLC, and we allow Google LLC to collect the information below through its software development kit (SDK) in the app. Google processes this information on its own behalf, not on ours.</p>
+        <p>2. Who collects it: Google LLC (United States). When choosing an ad (the ad auction), Google may share some of this information with other ad buyers under Google's policies.</p>
+        <p>3. What Google may collect</p>
+        <ul>
+          <li>Your device's advertising ID (Android), App set ID, and, where applicable, identifiers related to accounts signed in on the device</li>
+          <li>IP address (used to estimate your approximate location)</li>
+          <li>Device information (such as device model, operating system and version, language settings and app information)</li>
+          <li>Ad requests, impressions, views, clicks and rewards</li>
+          <li>Error and performance information from the ads SDK</li>
+        </ul>
+        <p>On iOS, Friddy does not ask for permission to track you (App Tracking Transparency), so your device's advertising identifier (IDFA) is not collected. Google's SDK may still process device-level information other than the IDFA to serve ads and prevent fraud. We do not include your name, email address, account ID, inventory, shopping, diet or allergy information, or saved recipes in ad requests.</p>
+        <p>4. When it is collected</p>
+        <ul>
+          <li>When you open the app (and possibly again when you open your Profile): Google is asked whether a consent choice is needed in your region. This happens whether or not you watch ads.</li>
+          <li>When you open the Missions screen, and right after you finish an ad: an ad may be requested in advance so the next one starts quickly (only while you have ad rewards left that day). Also when you open Flyer Deals and your next price search needs an ad.</li>
+          <li>When you tap "Watch an ad", "Ad +10", "Watch an ad to search" or "Ad, then refresh" and watch an ad.</li>
+        </ul>
+        <p>5. Why: to serve and measure ads, prevent invalid ad traffic, and personalize ads.</p>
+        <ul>
+          <li>On Android, in Korea, the United States, Canada and elsewhere, ads may be personalized without a separate consent step; you can opt out as described in "Your choices".</li>
+          <li>On iOS, Friddy does not ask for tracking permission and requests only non-personalized ads.</li>
+        </ul>
+        <p>6. How long: We do not receive or keep the information Google collects. Google keeps it according to its own privacy policy.</p>
+        <ul>
+          <li>We do keep the coins paid for ads you watched (amount, date and time) and how many ad rewards you got today, as part of your Friddy Room data (see Section 1.9), and ad impressions and rewards may be recorded in our usage statistics (Firebase Analytics; see Section 6, "Automatic collection technologies").</li>
+          <li>How Google uses information from sites or apps that use its services: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
+          <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+        </ul>
+        <p id="ad-choices">7. Your choices</p>
+        <ul>
+          <li>Android: delete your advertising ID in Settings &gt; Privacy &gt; Ads (Settings &gt; Google &gt; Ads on some devices) so it is not used for personalized ads. On devices without that option, turn on "Opt out of Ads Personalization" on the same screen. Resetting the advertising ID only gives you a new one; it is not a way to opt out.</li>
+          <li>iOS: Friddy requests only non-personalized ads and does not ask for tracking permission, so the IDFA is not used.</li>
+          <li>Watching ads is optional. No ad plays unless you tap an ad button. Opening the Missions screen may still request an ad in advance, and the consent check when the app starts happens either way.</li>
+        </ul>
+        <p>8. If you opt out: on Android, after you delete your advertising ID you may see ads that are not personalized. Every feature of the app works without watching ads, and you can still earn coins through missions and visits.</p>
+        <p>9. We do not use the diet, allergy or other information you enter in Friddy for advertising, and we do not include it in ad requests to Google. We limit ads to Google's "PG" (parental guidance) content rating or lower. Friddy is not directed at children under 14.</p>
+        <p>10. Questions about advertising data: our privacy officer (Siyoun Kim, <a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a>).</p>
+
+        <h2 id="auto">6. Automatic collection technologies</h2>
+        <p>1. The app includes these software development kits (SDKs), which collect information automatically while you use the app:</p>
+        <ul>
+          <li>Google Firebase Analytics and Crashlytics: usage statistics (which may include ad impressions and rewards), crash and error information, device-level identifiers such as an app instance ID, and the Android advertising ID, to understand how the app is used and fix problems</li>
+          <li>Google AdMob and User Messaging Platform: see Section 5, "Advertising (Google AdMob) and your choices"</li>
+        </ul>
+        <p>2. When showing an ad or the ad consent form, Google's SDK may store cookies or similar information on your device.</p>
+        <p>3. How to opt out</p>
+        <ul>
+          <li>Collection for ads: see "Your choices" in Section 5.</li>
+          <li>Firebase Analytics and Crashlytics: this collection cannot be turned off separately in the app. On Android, deleting your advertising ID stops only the advertising ID from being collected. If you do not want this collection, you can stop using or delete the app.</li>
+        </ul>
+
+        <h2 id="retention">7. Data retention</h2>
+        <p>We retain personal information only for as long as reasonably necessary to provide Friddy, comply with legal obligations, resolve disputes, improve security, and maintain business records.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Data category</th><th>Retention period</th></tr></thead>
+            <tbody>
+              <tr><td>Account information</td><td>Until account deletion</td></tr>
+              <tr><td>Guest (anonymous) account data</td><td>Until the account is deleted or upgraded (same schedule as registered-account data). Data in a guest account is not deleted automatically when you can no longer reach that guest account (for example, after you sign in to another account or delete the app); it stays on our servers</td></tr>
+              <tr><td>Inventory and shopping data</td><td>Until account deletion</td></tr>
+              <tr><td>Receipt and fridge/kitchen photos</td><td>Until account deletion</td></tr>
+              <tr><td>Receipt extracted text</td><td>Until account deletion</td></tr>
+              <tr><td>Voice transcripts (converted text)</td><td>Discarded immediately after processing (not stored)</td></tr>
+              <tr><td>Voice (audio) data</td><td>Not collected</td></tr>
+              <tr><td>Friddy Room data (our servers)</td><td>Until you delete your account; when you do, it is deleted under the same rules as your other account data. Today's mission record starts over each day</td></tr>
+              <tr><td>Friddy Room data (copy on your device)</td><td>Deleted when you sign out, except that it stays on the device, to be reconciled at your next sign-in, if it could not be synced with our servers during that session (for example, offline). Deleted immediately when you delete your account, and when you delete the app. Data Firebase caches on the device and copies in your device backups are removed when you delete the app or that backup</td></tr>
+              <tr><td>What the widget shows (on your device only)</td><td>Kept up to date while you use the app. Deleted when you sign out or delete your account, and when you delete the app</td></tr>
+              <tr><td>AI advice record (our servers, and a copy on your device)</td><td>Replaced when new advice is made on another day; earlier advice is not kept. The copy on your device is deleted when you sign out or delete the app. The record on our servers is deleted under the same rules as your other account data when you delete your account</td></tr>
+              <tr><td>Recipes you save from a link</td><td>Until you remove the recipe from Saved (it is then deleted from our servers). Saved recipes, counting those saved from the app's recipe screen, are limited to 200 in total; beyond that the oldest saved ones drop off the list, and a recipe saved from a link is then deleted from our servers too. Deleted under the same rules as your other account data when you delete your account</td></tr>
+              <tr><td>Recipe statistics (saves per recipe, no account ID)</td><td>Kept while we run the service. Unsaving a recipe or deleting your account takes that save out of the count</td></tr>
+              <tr><td>Pending invite reward (the code owner's account identifier)</td><td>Deleted once the code owner's coins are paid, or after 14 days. Whether you got an invite reward, and how many, is kept as Friddy Room data</td></tr>
+              <tr><td>Friends' rooms</td><td>Removing a friend deletes them from your friend list and the heart dates. Deleting your account deletes your friend code, the room your friends see, your friend list and the people you blocked, and removes you from your friends' lists</td></tr>
+              <tr><td>Friends' rooms reports</td><td>One year from the report (records of misuse), even if the person reporting or reported deletes their account; then deleted</td></tr>
+              <tr><td>Flyer Deals search results (by area, no account ID)</td><td>Reused for searches in the same area for 24 hours, then replaced by the next search</td></tr>
+              <tr><td>Coin purchases</td><td>When you delete your account we remove your account identifier; the rest is kept for 5 years (Korean E-Commerce Act) to keep a payment from being paid twice and to handle refunds</td></tr>
+              <tr><td>Advertising information collected by Google</td><td>We do not receive or keep it (Google keeps it under its own privacy policy). The coins paid for ads you watched are kept as Friddy Room data</td></tr>
+              <tr><td>Payment records</td><td>5 years (Korean E-Commerce Act)</td></tr>
+              <tr><td>Login records</td><td>3 months (Korean Communications Privacy Protection Act)</td></tr>
+              <tr><td>Fraud / abuse records</td><td>1 year</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>You may request deletion of your account or certain personal data as described in Section 8.</p>
+
+        <h2 id="rights">8. Your rights and choices</h2>
+        <p>Depending on your location and applicable law, you may have rights to access your personal information, correct inaccurate information, delete personal information, withdraw consent where processing is based on consent, object to certain processing, request restriction of processing, request information about how your data is used, and request account deletion.</p>
+        <ul>
+          <li>Friddy Room data cannot be deleted item by item in the app. You can delete it by deleting your account (Profile &gt; Delete account) or by asking our privacy officer. You can see your recent coin history in Profile &gt; Coin history, and unsave a recipe by tapping "Saved" on the recipe.</li>
+          <li>A recipe you saved from a link is deleted from our servers when you unsave it, by tapping "Saved" on the recipe or removing it in Saved recipes.</li>
+          <li>In Friends' rooms you can remove, report or block a friend, and change the name your friends see. Entering a blocked person's friend code again lifts the block.</li>
+          <li>If you use Friddy as a guest and then sign in to another account, your guest data does not move to that account and is not deleted automatically. To delete your guest data, use Profile &gt; Delete account before you sign in to another account or delete the app.</li>
+          <li>To opt out of personalized ads, see "Your choices" in Section 5.</li>
+        </ul>
+
+                <h3>Account deletion</h3>
+        <p>You can delete your account at any time directly within the Friddy app:</p>
+        <ol>
+          <li>Open Friddy</li>
+          <li>Go to Profile → Settings → Account</li>
+          <li>Tap Delete Account (계정 삭제)</li>
+          <li>Confirm deletion</li>
+        </ol>
+        <p>Upon deletion:</p>
+        <ul>
+          <li>All inventory, shopping list, and recipe data is permanently deleted within 30 days</li>
+          <li>Your account credentials are immediately invalidated</li>
+          <li>Your Friddy Room data, recipes you saved from a link, and Friends' rooms data (your friend code, the room your friends see, your friend list and the people you blocked) are deleted too, and you are removed from your friends' lists. Remaining coins and owned items cannot be restored. Friends' rooms reports are kept for one year from the report to prevent misuse, then deleted</li>
+          <li>Anonymized usage statistics may be retained</li>
+          <li>Records required by law (such as purchase history retained for 5 years per the Korean E-Commerce Act) are retained for the legally required period and then deleted. Coin purchase records are kept with your account identifier removed</li>
+        </ul>
+        <p>You may also request account deletion by emailing <a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a>. We will respond within 10 business days. To exercise other rights, contact us at the same address. We may need to verify your identity before completing certain requests.</p>
+
+        <h2 id="permissions">9. Permissions</h2>
+        <p>Friddy may request device permissions, including:</p>
+        <ul>
+          <li><strong>Camera or Photo Library</strong> — used for receipt scanning, fridge/kitchen photo scanning, food-item images, or profile-related uploads.</li>
+          <li><strong>Notifications</strong> — used for expiration reminders, grocery reminders, reorder alerts, and account notices.</li>
+          <li><strong>Location</strong> — used only when you set your area with "Use current location" (see Section 1.6). (Optional)</li>
+          <li><strong>Microphone</strong> — used when you add items to your shopping list by voice. (Optional)</li>
+          <li><strong>Speech Recognition (iOS)</strong> — used to convert what you say into text. (Optional)</li>
+        </ul>
+        <p>You can manage permissions through your device settings. Some features may not work properly if permissions are disabled.</p>
+        <p>The Location, Microphone and Speech Recognition permissions are all optional. If you choose not to grant them, you can still use every feature of the app by choosing your area from the list and entering items manually.</p>
+
+        <h2 id="children">10. Children</h2>
+        <p>Friddy is not directed at children under 14 in Korea, under 13 in the United States and the UK, or under 16 (or the age set by local law) in the EEA, and we do not knowingly collect their personal information. If we learn that such a child has created an account without the required parental consent, we will delete the account and its data without delay. Please contact our privacy officer at <a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a> if you believe this has happened.</p>
+
+                <h2 id="security">11. Security</h2>
+        <p>We use reasonable technical and organizational measures to protect personal information, including authentication controls, database access rules, encryption in transit, role-based access controls where applicable, logging and monitoring, secure cloud infrastructure, and limited internal access to user data.</p>
+        <div class="note">No method of internet transmission or electronic storage is completely secure. We cannot guarantee absolute security.</div>
+
+        <h2 id="ai">12. AI, recommendations, and automated outputs</h2>
+        <p>Friddy uses automated systems and AI models to generate recommendations. These outputs may include suggested recipes, grocery optimization results, budget recommendations, inventory predictions, expiration reminders, receipt matching results, and food waste insights.</p>
+        <p>These recommendations are for convenience and informational purposes only. Friddy does not guarantee that AI-generated recommendations are always accurate, complete, safe, or suitable for your personal circumstances. Users are responsible for reviewing allergy information, ingredient suitability, food safety, expiration status, grocery prices, store availability, and purchase decisions.</p>
+
+        <h2 id="safety">13. Food safety and allergy notice</h2>
+        <p>Friddy may help organize food information, but it is not a medical, nutrition, or food safety authority. You should independently verify whether food is safe to consume. Friddy's allergy and dietary features are intended to assist users, but they may not detect every risk. Always review ingredient labels, allergen warnings, and official product information before consuming food.</p>
+
+        <h2 id="thirdparty">14. Third-party links and services</h2>
+        <p>Friddy may contain links to third-party websites, grocery platforms, affiliate partners, payment providers, or external services. We are not responsible for the privacy practices, content, or policies of those third parties. When you leave Friddy, your activity is governed by the third party's own terms and privacy policy.</p>
+
+        <h2 id="officer">15. Personal Information Protection Officer</h2>
+        <p>Under Korea's Personal Information Protection Act (PIPA), Article 31, we designate a Personal Information Protection Officer to oversee personal information handling and respond to user inquiries.</p>
+        <p style="font-family: var(--mono); font-size: 14px; line-height: 1.8;">
+          <strong style="font-family: var(--sans);">Personal Information Protection Officer</strong><br>
+          Name: Siyoun Kim<br>
+          Position: Co-founder, Everything Essential<br>
+          Email: ee.friddy@gmail.com
+        </p>
+
+        <h2 id="overseas">16. For users in the United States</h2>
+        <ul>
+          <li>When ads are shown, Google collects identifiers and ad interaction information as described above, and we receive payment from Google for showing ads. Some U.S. state laws, such as California's, may treat this as a "sale" or "sharing" of personal information for targeted advertising. On Android, you can limit personalized ads by deleting your advertising ID (or by turning on "Opt out of Ads Personalization" on some devices). On iOS, Friddy requests only non-personalized ads.</li>
+          <li>On Android, Google may collect information about your activity across different apps and over time.</li>
+          <li>You can ask our privacy officer (<a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a>) to access, delete or correct your personal information. We will not discriminate against you for making such a request.</li>
+          <li>Friddy is an app, not a web browser, so it does not respond to browser "Do Not Track" signals. Use the device settings above instead.</li>
+        </ul>
+
+        <h2 id="changes">17. Changes to this Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify users through the app, email, website, or another appropriate method. The "Effective Date" at the top of this document indicates when the policy was last updated.</p>
+        <ul>
+          <li>November 25, 2026 — Added recipe statistics from saved recipes and invite rewards, and described what the Home Screen and Lock Screen widget shows, room names, how each friend's growth stage is counted, and the AI advice record on Insights, with how long each is kept. (Posted November 24, 2026.)</li>
+          <li>November 18, 2026 — Added how Google collects information for rewarded ads (Google AdMob), automatic collection technologies, and the transfer to Google LLC; stated how the advertising ID is used; added Friddy Room data, coin purchases, Friends' rooms (including reports and blocks), and recipes you save from a link; described Flyer Deals' lowest-price search and the coordinates kept for your area, and corrected where voice input is processed; updated the section on children.</li>
+          <li>August 9, 2026 — Added voice input for shopping lists: microphone and speech-recognition permissions, the voice input data category, and Apple/Google speech recognition as processors.</li>
+          <li>July 20, 2026 — Named usage-analytics and crash-reporting tools (Firebase Analytics/Crashlytics), added Google Play payments, and clarified AI price-analysis.</li>
+          <li>July 10, 2026 — Added fridge/kitchen photo scanning (analyzed via Google Gemini) to automatically recognize food items for your inventory; clarified that the Coupang Partners integration covers product search and recommendations shown on the shopping screen and added the required commission disclosure; changed the retention period for receipt and fridge/kitchen photos to "until account deletion."</li>
+          <li>June 27, 2026 — Added anonymous (guest) accounts and the guest-to-registered account upgrade flow.</li>
+        </ul>
+
+        <h2 id="contact">18. Contact us</h2>
+        <p>If you have any questions, requests, or concerns about this Privacy Policy or how Friddy handles personal information, please contact:</p>
+        <p style="font-family: var(--mono); font-size: 14px; line-height: 1.8;">
+          Everything Essential<br>
+          Email: <a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a>
+        </p>
+        <p>A Korean-language version of this Privacy Policy is available at <a href="/Privacy-ko">한국어 버전</a>. Our Terms of Service are at <a href="/Terms">Terms</a>.</p>
+
+        <details id="previous" class="previous-policy">
+          <summary>Previous Privacy Policy (in effect November 18, 2026 to November 24, 2026)</summary>
+        <h2 id="prev1118-collect">1. Information we collect</h2>
         <p>We collect information to provide, maintain, personalize, secure, and improve Friddy.</p>
 
                 <h3>1.1 Account information</h3>
@@ -316,7 +788,7 @@
         <p>Our server sets the name your friends see and refuses names with profanity, slurs, hate or sexual terms, or that pose as our staff. When you report a friend, we review it and act, for example by hiding their name or removing them from Friends' rooms; they are not told who reported them. A name reported by three different friends is hidden right away. Blocking someone removes them as a friend, and they can't add you again with your friend code.</p>
         <div class="note">Information that Google LLC collects directly through its SDK in the app for advertising is described in Section 5, "Advertising (Google AdMob) and your choices". We do not receive or keep the information Google collects; we keep only the coins paid for ads you watched and today's ad-reward count, as part of the Friddy Room data above.</div>
 
-        <h2 id="use">2. How we use your information</h2>
+        <h2 id="prev1118-use">2. How we use your information</h2>
         <p>We use the information we collect for the following purposes.</p>
 
                 <h3>2.1 To provide core app features</h3>
@@ -349,7 +821,7 @@
           <li>Providing Flyer Deals: finding this week's prices at stores near the area you set and comparing them with your shopping list</li>
         </ul>
 
-        <h2 id="share">3. How we share information</h2>
+        <h2 id="prev1118-share">3. How we share information</h2>
         <p>We may share information only in the situations described below. However, Google LLC collects information such as the advertising ID directly through Google's ads SDK in the app, as described in Section 5, "Advertising (Google AdMob) and your choices". We do not include your name, email address, account ID, inventory, shopping, diet or allergy information, or saved recipes in ad requests.</p>
 
         <h3>3.1 With service providers</h3>
@@ -389,7 +861,7 @@
         <h3>3.5 Business transfers</h3>
         <p>If Everything Essential is involved in a merger, acquisition, financing, restructuring, or sale of assets, user information may be transferred as part of that transaction. We will take reasonable steps to ensure continued protection of user information.</p>
 
-        <h2 id="transfers">4. International data transfers</h2>
+        <h2 id="prev1118-transfers">4. International data transfers</h2>
         <p>Friddy stores and processes information in countries where Everything Essential, its service providers, or infrastructure partners operate. The following international transfers occur:</p>
         <div class="table-wrap">
           <table class="wide-table">
@@ -408,7 +880,7 @@
         <p>Coupang, a Korean company, receives only the item names you search on the shopping screen, which is not a transfer outside Korea. These transfers are protected by contractual safeguards and the recipients' applicable security frameworks. Privacy contact for Google LLC: <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">support.google.com/policies/contact/general_privacy_form</a></p>
         <p>How to refuse the transfer for advertising, and what happens if you do: see "Your choices" and "If you opt out" in Section 5. The consent check when the app starts cannot be turned off separately in the app; if you do not want it, you can stop using or delete the app.</p>
 
-        <h2 id="advertising">5. Advertising (Google AdMob) and your choices</h2>
+        <h2 id="prev1118-advertising">5. Advertising (Google AdMob) and your choices</h2>
         <p>1. Friddy offers optional rewarded video ads. To show them we use Google AdMob and Google's consent tool (User Messaging Platform), provided by Google LLC, and we allow Google LLC to collect the information below through its software development kit (SDK) in the app. Google processes this information on its own behalf, not on ours.</p>
         <p>2. Who collects it: Google LLC (United States). When choosing an ad (the ad auction), Google may share some of this information with other ad buyers under Google's policies.</p>
         <p>3. What Google may collect</p>
@@ -437,7 +909,7 @@
           <li>How Google uses information from sites or apps that use its services: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
           <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
         </ul>
-        <p id="ad-choices">7. Your choices</p>
+        <p id="prev1118-ad-choices">7. Your choices</p>
         <ul>
           <li>Android: delete your advertising ID in Settings &gt; Privacy &gt; Ads (Settings &gt; Google &gt; Ads on some devices) so it is not used for personalized ads. On devices without that option, turn on "Opt out of Ads Personalization" on the same screen. Resetting the advertising ID only gives you a new one; it is not a way to opt out.</li>
           <li>iOS: Friddy requests only non-personalized ads and does not ask for tracking permission, so the IDFA is not used.</li>
@@ -447,7 +919,7 @@
         <p>9. We do not use the diet, allergy or other information you enter in Friddy for advertising, and we do not include it in ad requests to Google. We limit ads to Google's "PG" (parental guidance) content rating or lower. Friddy is not directed at children under 14.</p>
         <p>10. Questions about advertising data: our privacy officer (Siyoun Kim, <a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a>).</p>
 
-        <h2 id="auto">6. Automatic collection technologies</h2>
+        <h2 id="prev1118-auto">6. Automatic collection technologies</h2>
         <p>1. The app includes these software development kits (SDKs), which collect information automatically while you use the app:</p>
         <ul>
           <li>Google Firebase Analytics and Crashlytics: usage statistics (which may include ad impressions and rewards), crash and error information, device-level identifiers such as an app instance ID, and the Android advertising ID, to understand how the app is used and fix problems</li>
@@ -460,7 +932,7 @@
           <li>Firebase Analytics and Crashlytics: this collection cannot be turned off separately in the app. On Android, deleting your advertising ID stops only the advertising ID from being collected. If you do not want this collection, you can stop using or delete the app.</li>
         </ul>
 
-        <h2 id="retention">7. Data retention</h2>
+        <h2 id="prev1118-retention">7. Data retention</h2>
         <p>We retain personal information only for as long as reasonably necessary to provide Friddy, comply with legal obligations, resolve disputes, improve security, and maintain business records.</p>
         <div class="table-wrap">
           <table>
@@ -489,7 +961,7 @@
         </div>
         <p>You may request deletion of your account or certain personal data as described in Section 8.</p>
 
-        <h2 id="rights">8. Your rights and choices</h2>
+        <h2 id="prev1118-rights">8. Your rights and choices</h2>
         <p>Depending on your location and applicable law, you may have rights to access your personal information, correct inaccurate information, delete personal information, withdraw consent where processing is based on consent, object to certain processing, request restriction of processing, request information about how your data is used, and request account deletion.</p>
         <ul>
           <li>Friddy Room data cannot be deleted item by item in the app. You can delete it by deleting your account (Profile &gt; Delete account) or by asking our privacy officer. You can see your recent coin history in Profile &gt; Coin history, and unsave a recipe by tapping "Saved" on the recipe.</li>
@@ -517,7 +989,7 @@
         </ul>
         <p>You may also request account deletion by emailing <a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a>. We will respond within 10 business days. To exercise other rights, contact us at the same address. We may need to verify your identity before completing certain requests.</p>
 
-        <h2 id="permissions">9. Permissions</h2>
+        <h2 id="prev1118-permissions">9. Permissions</h2>
         <p>Friddy may request device permissions, including:</p>
         <ul>
           <li><strong>Camera or Photo Library</strong> — used for receipt scanning, fridge/kitchen photo scanning, food-item images, or profile-related uploads.</li>
@@ -529,24 +1001,24 @@
         <p>You can manage permissions through your device settings. Some features may not work properly if permissions are disabled.</p>
         <p>The Location, Microphone and Speech Recognition permissions are all optional. If you choose not to grant them, you can still use every feature of the app by choosing your area from the list and entering items manually.</p>
 
-        <h2 id="children">10. Children</h2>
+        <h2 id="prev1118-children">10. Children</h2>
         <p>Friddy is not directed at children under 14 in Korea, under 13 in the United States and the UK, or under 16 (or the age set by local law) in the EEA, and we do not knowingly collect their personal information. If we learn that such a child has created an account without the required parental consent, we will delete the account and its data without delay. Please contact our privacy officer at <a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a> if you believe this has happened.</p>
 
-                <h2 id="security">11. Security</h2>
+                <h2 id="prev1118-security">11. Security</h2>
         <p>We use reasonable technical and organizational measures to protect personal information, including authentication controls, database access rules, encryption in transit, role-based access controls where applicable, logging and monitoring, secure cloud infrastructure, and limited internal access to user data.</p>
         <div class="note">No method of internet transmission or electronic storage is completely secure. We cannot guarantee absolute security.</div>
 
-        <h2 id="ai">12. AI, recommendations, and automated outputs</h2>
+        <h2 id="prev1118-ai">12. AI, recommendations, and automated outputs</h2>
         <p>Friddy uses automated systems and AI models to generate recommendations. These outputs may include suggested recipes, grocery optimization results, budget recommendations, inventory predictions, expiration reminders, receipt matching results, and food waste insights.</p>
         <p>These recommendations are for convenience and informational purposes only. Friddy does not guarantee that AI-generated recommendations are always accurate, complete, safe, or suitable for your personal circumstances. Users are responsible for reviewing allergy information, ingredient suitability, food safety, expiration status, grocery prices, store availability, and purchase decisions.</p>
 
-        <h2 id="safety">13. Food safety and allergy notice</h2>
+        <h2 id="prev1118-safety">13. Food safety and allergy notice</h2>
         <p>Friddy may help organize food information, but it is not a medical, nutrition, or food safety authority. You should independently verify whether food is safe to consume. Friddy's allergy and dietary features are intended to assist users, but they may not detect every risk. Always review ingredient labels, allergen warnings, and official product information before consuming food.</p>
 
-        <h2 id="thirdparty">14. Third-party links and services</h2>
+        <h2 id="prev1118-thirdparty">14. Third-party links and services</h2>
         <p>Friddy may contain links to third-party websites, grocery platforms, affiliate partners, payment providers, or external services. We are not responsible for the privacy practices, content, or policies of those third parties. When you leave Friddy, your activity is governed by the third party's own terms and privacy policy.</p>
 
-        <h2 id="officer">15. Personal Information Protection Officer</h2>
+        <h2 id="prev1118-officer">15. Personal Information Protection Officer</h2>
         <p>Under Korea's Personal Information Protection Act (PIPA), Article 31, we designate a Personal Information Protection Officer to oversee personal information handling and respond to user inquiries.</p>
         <p style="font-family: var(--mono); font-size: 14px; line-height: 1.8;">
           <strong style="font-family: var(--sans);">Personal Information Protection Officer</strong><br>
@@ -555,7 +1027,7 @@
           Email: ee.friddy@gmail.com
         </p>
 
-        <h2 id="overseas">16. For users in the United States</h2>
+        <h2 id="prev1118-overseas">16. For users in the United States</h2>
         <ul>
           <li>When ads are shown, Google collects identifiers and ad interaction information as described above, and we receive payment from Google for showing ads. Some U.S. state laws, such as California's, may treat this as a "sale" or "sharing" of personal information for targeted advertising. On Android, you can limit personalized ads by deleting your advertising ID (or by turning on "Opt out of Ads Personalization" on some devices). On iOS, Friddy requests only non-personalized ads.</li>
           <li>On Android, Google may collect information about your activity across different apps and over time.</li>
@@ -563,7 +1035,7 @@
           <li>Friddy is an app, not a web browser, so it does not respond to browser "Do Not Track" signals. Use the device settings above instead.</li>
         </ul>
 
-        <h2 id="changes">17. Changes to this Privacy Policy</h2>
+        <h2 id="prev1118-changes">17. Changes to this Privacy Policy</h2>
         <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify users through the app, email, website, or another appropriate method. The "Effective Date" at the top of this document indicates when the policy was last updated.</p>
         <ul>
           <li>November 18, 2026 — Added how Google collects information for rewarded ads (Google AdMob), automatic collection technologies, and the transfer to Google LLC; stated how the advertising ID is used; added Friddy Room data, coin purchases, Friends' rooms (including reports and blocks), and recipes you save from a link; described Flyer Deals' lowest-price search and the coordinates kept for your area, and corrected where voice input is processed; updated the section on children.</li>
@@ -573,15 +1045,16 @@
           <li>June 27, 2026 — Added anonymous (guest) accounts and the guest-to-registered account upgrade flow.</li>
         </ul>
 
-        <h2 id="contact">18. Contact us</h2>
+        <h2 id="prev1118-contact">18. Contact us</h2>
         <p>If you have any questions, requests, or concerns about this Privacy Policy or how Friddy handles personal information, please contact:</p>
         <p style="font-family: var(--mono); font-size: 14px; line-height: 1.8;">
           Everything Essential<br>
           Email: <a href="mailto:ee.friddy@gmail.com">ee.friddy@gmail.com</a>
         </p>
         <p>A Korean-language version of this Privacy Policy is available at <a href="/Privacy-ko">한국어 버전</a>. Our Terms of Service are at <a href="/Terms">Terms</a>.</p>
+        </details>
 
-        <details id="previous" class="previous-policy">
+        <details id="previous-2026-08-09" class="previous-policy">
           <summary>Previous Privacy Policy (in effect August 9, 2026 to November 17, 2026)</summary>
         <h2 id="prev-collect">1. Information we collect</h2>
         <p>We collect information to provide, maintain, personalize, secure, and improve Friddy.</p>
